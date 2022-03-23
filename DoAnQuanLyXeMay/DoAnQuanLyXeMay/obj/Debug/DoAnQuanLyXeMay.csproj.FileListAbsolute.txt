@@ -1,0 +1,9 @@
+C:\Users\Administrator\Documents\GitHub\quanlyxemay\DoAnQuanLyXeMay\DoAnQuanLyXeMay\bin\Debug\DoAnQuanLyXeMay.exe.config
+C:\Users\Administrator\Documents\GitHub\quanlyxemay\DoAnQuanLyXeMay\DoAnQuanLyXeMay\bin\Debug\DoAnQuanLyXeMay.exe
+C:\Users\Administrator\Documents\GitHub\quanlyxemay\DoAnQuanLyXeMay\DoAnQuanLyXeMay\bin\Debug\DoAnQuanLyXeMay.pdb
+C:\Users\Administrator\Documents\GitHub\quanlyxemay\DoAnQuanLyXeMay\DoAnQuanLyXeMay\obj\Debug\DoAnQuanLyXeMay.Properties.Resources.resources
+C:\Users\Administrator\Documents\GitHub\quanlyxemay\DoAnQuanLyXeMay\DoAnQuanLyXeMay\obj\Debug\DoAnQuanLyXeMay.csproj.GenerateResource.Cache
+C:\Users\Administrator\Documents\GitHub\quanlyxemay\DoAnQuanLyXeMay\DoAnQuanLyXeMay\obj\Debug\DoAnQuanLyXeMay.exe
+C:\Users\Administrator\Documents\GitHub\quanlyxemay\DoAnQuanLyXeMay\DoAnQuanLyXeMay\obj\Debug\DoAnQuanLyXeMay.pdb
+C:\Users\Administrator\Documents\GitHub\quanlyxemay\DoAnQuanLyXeMay\DoAnQuanLyXeMay\obj\Debug\DoAnQuanLyXeMay.Form1.resources
+C:\Users\Administrator\Documents\GitHub\quanlyxemay\DoAnQuanLyXeMay\DoAnQuanLyXeMay\obj\Debug\DoAnQuanLyXeMay.csprojResolveAssemblyReference.cache
