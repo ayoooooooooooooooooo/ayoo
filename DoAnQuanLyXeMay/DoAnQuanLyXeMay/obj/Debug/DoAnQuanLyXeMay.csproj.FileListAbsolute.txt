@@ -7,3 +7,14 @@ C:\Users\Administrator\Documents\GitHub\quanlyxemay\DoAnQuanLyXeMay\DoAnQuanLyXe
 C:\Users\Administrator\Documents\GitHub\quanlyxemay\DoAnQuanLyXeMay\DoAnQuanLyXeMay\obj\Debug\DoAnQuanLyXeMay.pdb
 C:\Users\Administrator\Documents\GitHub\quanlyxemay\DoAnQuanLyXeMay\DoAnQuanLyXeMay\obj\Debug\DoAnQuanLyXeMay.Form1.resources
 C:\Users\Administrator\Documents\GitHub\quanlyxemay\DoAnQuanLyXeMay\DoAnQuanLyXeMay\obj\Debug\DoAnQuanLyXeMay.csprojResolveAssemblyReference.cache
+C:\Users\Cu Bon\Documents\GitHub\ayoo\DoAnQuanLyXeMay\DoAnQuanLyXeMay\bin\Debug\DoAnQuanLyXeMay.exe.config
+C:\Users\Cu Bon\Documents\GitHub\ayoo\DoAnQuanLyXeMay\DoAnQuanLyXeMay\bin\Debug\DoAnQuanLyXeMay.exe
+C:\Users\Cu Bon\Documents\GitHub\ayoo\DoAnQuanLyXeMay\DoAnQuanLyXeMay\bin\Debug\DoAnQuanLyXeMay.pdb
+C:\Users\Cu Bon\Documents\GitHub\ayoo\DoAnQuanLyXeMay\DoAnQuanLyXeMay\obj\Debug\DoAnQuanLyXeMay.csproj.AssemblyReference.cache
+C:\Users\Cu Bon\Documents\GitHub\ayoo\DoAnQuanLyXeMay\DoAnQuanLyXeMay\obj\Debug\DoAnQuanLyXeMay.csproj.SuggestedBindingRedirects.cache
+C:\Users\Cu Bon\Documents\GitHub\ayoo\DoAnQuanLyXeMay\DoAnQuanLyXeMay\obj\Debug\DoAnQuanLyXeMay.Form1.resources
+C:\Users\Cu Bon\Documents\GitHub\ayoo\DoAnQuanLyXeMay\DoAnQuanLyXeMay\obj\Debug\DoAnQuanLyXeMay.Properties.Resources.resources
+C:\Users\Cu Bon\Documents\GitHub\ayoo\DoAnQuanLyXeMay\DoAnQuanLyXeMay\obj\Debug\DoAnQuanLyXeMay.csproj.GenerateResource.cache
+C:\Users\Cu Bon\Documents\GitHub\ayoo\DoAnQuanLyXeMay\DoAnQuanLyXeMay\obj\Debug\DoAnQuanLyXeMay.csproj.CoreCompileInputs.cache
+C:\Users\Cu Bon\Documents\GitHub\ayoo\DoAnQuanLyXeMay\DoAnQuanLyXeMay\obj\Debug\DoAnQuanLyXeMay.exe
+C:\Users\Cu Bon\Documents\GitHub\ayoo\DoAnQuanLyXeMay\DoAnQuanLyXeMay\obj\Debug\DoAnQuanLyXeMay.pdb

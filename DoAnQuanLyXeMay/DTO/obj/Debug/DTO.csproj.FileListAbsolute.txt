@@ -1,0 +1,7 @@
+C:\Users\Cu Bon\Documents\GitHub\ayoo\DoAnQuanLyXeMay\DTO\bin\Debug\DTO.dll.config
+C:\Users\Cu Bon\Documents\GitHub\ayoo\DoAnQuanLyXeMay\DTO\bin\Debug\DTO.dll
+C:\Users\Cu Bon\Documents\GitHub\ayoo\DoAnQuanLyXeMay\DTO\bin\Debug\DTO.pdb
+C:\Users\Cu Bon\Documents\GitHub\ayoo\DoAnQuanLyXeMay\DTO\obj\Debug\DTO.csproj.AssemblyReference.cache
+C:\Users\Cu Bon\Documents\GitHub\ayoo\DoAnQuanLyXeMay\DTO\obj\Debug\DTO.csproj.CoreCompileInputs.cache
+C:\Users\Cu Bon\Documents\GitHub\ayoo\DoAnQuanLyXeMay\DTO\obj\Debug\DTO.dll
+C:\Users\Cu Bon\Documents\GitHub\ayoo\DoAnQuanLyXeMay\DTO\obj\Debug\DTO.pdb

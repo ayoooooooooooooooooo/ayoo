@@ -1,0 +1,13 @@
+C:\Users\Cu Bon\Documents\GitHub\ayoo\DoAnQuanLyXeMay\BLL\bin\Debug\BLL.dll
+C:\Users\Cu Bon\Documents\GitHub\ayoo\DoAnQuanLyXeMay\BLL\bin\Debug\BLL.pdb
+C:\Users\Cu Bon\Documents\GitHub\ayoo\DoAnQuanLyXeMay\BLL\bin\Debug\DAL.dll
+C:\Users\Cu Bon\Documents\GitHub\ayoo\DoAnQuanLyXeMay\BLL\bin\Debug\DTO.dll
+C:\Users\Cu Bon\Documents\GitHub\ayoo\DoAnQuanLyXeMay\BLL\bin\Debug\DAL.pdb
+C:\Users\Cu Bon\Documents\GitHub\ayoo\DoAnQuanLyXeMay\BLL\bin\Debug\DAL.dll.config
+C:\Users\Cu Bon\Documents\GitHub\ayoo\DoAnQuanLyXeMay\BLL\bin\Debug\DTO.pdb
+C:\Users\Cu Bon\Documents\GitHub\ayoo\DoAnQuanLyXeMay\BLL\bin\Debug\DTO.dll.config
+C:\Users\Cu Bon\Documents\GitHub\ayoo\DoAnQuanLyXeMay\BLL\obj\Debug\BLL.csproj.AssemblyReference.cache
+C:\Users\Cu Bon\Documents\GitHub\ayoo\DoAnQuanLyXeMay\BLL\obj\Debug\BLL.csproj.CoreCompileInputs.cache
+C:\Users\Cu Bon\Documents\GitHub\ayoo\DoAnQuanLyXeMay\BLL\obj\Debug\BLL.csproj.CopyComplete
+C:\Users\Cu Bon\Documents\GitHub\ayoo\DoAnQuanLyXeMay\BLL\obj\Debug\BLL.dll
+C:\Users\Cu Bon\Documents\GitHub\ayoo\DoAnQuanLyXeMay\BLL\obj\Debug\BLL.pdb

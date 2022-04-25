@@ -7,10 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using BLL;
 
-
-namespace DoAnQuanLyXeMay
+namespace GUI
 {
     public partial class Form1 : Form
     {
@@ -18,15 +16,6 @@ namespace DoAnQuanLyXeMay
         {
             InitializeComponent();
         }
-        BLLNHhanVien bllnv = new BLLNHhanVien();
-        private void Form1_Load(object sender, EventArgs e)
-        {
-            comboBox1.DataSource = bllnv.dsNhanVien();
-            comboBox1.DisplayMember = "TENNV";
-            comboBox1.ValueMember = "MANV";
-        }
 
-      
-        
     }
 }
