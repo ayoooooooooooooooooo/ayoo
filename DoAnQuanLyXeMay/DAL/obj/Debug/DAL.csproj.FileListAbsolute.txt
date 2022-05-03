@@ -9,3 +9,14 @@ C:\Users\Cu Bon\Documents\GitHub\ayoo\DoAnQuanLyXeMay\DAL\obj\Debug\DAL.csproj.C
 C:\Users\Cu Bon\Documents\GitHub\ayoo\DoAnQuanLyXeMay\DAL\obj\Debug\DAL.csproj.CopyComplete
 C:\Users\Cu Bon\Documents\GitHub\ayoo\DoAnQuanLyXeMay\DAL\obj\Debug\DAL.dll
 C:\Users\Cu Bon\Documents\GitHub\ayoo\DoAnQuanLyXeMay\DAL\obj\Debug\DAL.pdb
+C:\cac\Học kì 1 Năm 3\PTPM\ayoo\DoAnQuanLyXeMay\DAL\bin\Debug\DAL.dll.config
+C:\cac\Học kì 1 Năm 3\PTPM\ayoo\DoAnQuanLyXeMay\DAL\bin\Debug\DAL.dll
+C:\cac\Học kì 1 Năm 3\PTPM\ayoo\DoAnQuanLyXeMay\DAL\bin\Debug\DAL.pdb
+C:\cac\Học kì 1 Năm 3\PTPM\ayoo\DoAnQuanLyXeMay\DAL\bin\Debug\DTO.dll
+C:\cac\Học kì 1 Năm 3\PTPM\ayoo\DoAnQuanLyXeMay\DAL\bin\Debug\DTO.pdb
+C:\cac\Học kì 1 Năm 3\PTPM\ayoo\DoAnQuanLyXeMay\DAL\bin\Debug\DTO.dll.config
+C:\cac\Học kì 1 Năm 3\PTPM\ayoo\DoAnQuanLyXeMay\DAL\obj\Debug\DAL.csproj.AssemblyReference.cache
+C:\cac\Học kì 1 Năm 3\PTPM\ayoo\DoAnQuanLyXeMay\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+C:\cac\Học kì 1 Năm 3\PTPM\ayoo\DoAnQuanLyXeMay\DAL\obj\Debug\DAL.csproj.CopyComplete
+C:\cac\Học kì 1 Năm 3\PTPM\ayoo\DoAnQuanLyXeMay\DAL\obj\Debug\DAL.dll
+C:\cac\Học kì 1 Năm 3\PTPM\ayoo\DoAnQuanLyXeMay\DAL\obj\Debug\DAL.pdb
