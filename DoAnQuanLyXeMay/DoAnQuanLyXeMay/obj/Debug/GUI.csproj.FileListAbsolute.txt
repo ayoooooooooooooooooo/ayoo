@@ -37,3 +37,4 @@ C:\cac\Học kì 1 Năm 3\PTPM\ayoo\DoAnQuanLyXeMay\DoAnQuanLyXeMay\obj\Debug\GU
 C:\cac\Học kì 1 Năm 3\PTPM\ayoo\DoAnQuanLyXeMay\DoAnQuanLyXeMay\obj\Debug\GUI.csproj.CopyComplete
 C:\cac\Học kì 1 Năm 3\PTPM\ayoo\DoAnQuanLyXeMay\DoAnQuanLyXeMay\obj\Debug\DoAnQuanLyXeMay.exe
 C:\cac\Học kì 1 Năm 3\PTPM\ayoo\DoAnQuanLyXeMay\DoAnQuanLyXeMay\obj\Debug\DoAnQuanLyXeMay.pdb
+C:\Users\Cu Bon\Documents\GitHub\ayoo\DoAnQuanLyXeMay\DoAnQuanLyXeMay\obj\Debug\DoAnQuanLyXeMay.DangkiNV.resources

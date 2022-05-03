@@ -28,8 +28,14 @@ namespace DoAnQuanLyXeMay
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
-            //anh iu em
+            
 
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            DangkiNV a = new DangkiNV();
+            a.Show();
         }
     }
 }
