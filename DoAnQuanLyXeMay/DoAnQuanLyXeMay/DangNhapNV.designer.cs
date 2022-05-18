@@ -41,11 +41,11 @@ namespace DoAnQuanLyXeMay
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Museo 700", 20.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.DodgerBlue;
             this.label3.Location = new System.Drawing.Point(132, 42);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(176, 32);
+            this.label3.Size = new System.Drawing.Size(185, 31);
             this.label3.TabIndex = 20;
             this.label3.Text = "ĐĂNG NHẬP";
             // 
@@ -58,7 +58,7 @@ namespace DoAnQuanLyXeMay
             // 
             // btn_thoat
             // 
-            this.btn_thoat.Font = new System.Drawing.Font("Museo 700", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_thoat.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_thoat.ForeColor = System.Drawing.Color.MediumVioletRed;
             this.btn_thoat.Location = new System.Drawing.Point(270, 297);
             this.btn_thoat.Name = "btn_thoat";
@@ -98,7 +98,7 @@ namespace DoAnQuanLyXeMay
             // 
             // btn_dnnv
             // 
-            this.btn_dnnv.Font = new System.Drawing.Font("Museo 700", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_dnnv.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_dnnv.ForeColor = System.Drawing.Color.MediumVioletRed;
             this.btn_dnnv.Location = new System.Drawing.Point(74, 297);
             this.btn_dnnv.Name = "btn_dnnv";
@@ -106,6 +106,7 @@ namespace DoAnQuanLyXeMay
             this.btn_dnnv.TabIndex = 14;
             this.btn_dnnv.Text = "Đăng Nhập";
             this.btn_dnnv.UseVisualStyleBackColor = true;
+            this.btn_dnnv.Click += new System.EventHandler(this.btn_dnnv_Click);
             // 
             // DangNhapNV
             // 

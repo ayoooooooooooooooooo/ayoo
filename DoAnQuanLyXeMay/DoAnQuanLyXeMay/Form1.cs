@@ -19,6 +19,7 @@ namespace DoAnQuanLyXeMay
             InitializeComponent();
         }
         BLLNHhanVien bllnv = new BLLNHhanVien();
+       
         private void Form1_Load(object sender, EventArgs e)
         {
             comboBox1.DataSource = bllnv.dsNhanVien();
@@ -34,7 +35,7 @@ namespace DoAnQuanLyXeMay
 
         private void button1_Click(object sender, EventArgs e)
         {
-            DangkiNV a = new DangkiNV();
+            DangNhapNV a = new DangNhapNV();
             a.Show();
         }
     }
