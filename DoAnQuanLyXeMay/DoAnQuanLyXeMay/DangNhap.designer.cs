@@ -106,6 +106,7 @@
             this.btn_dnkh.TabIndex = 7;
             this.btn_dnkh.Text = "Đăng Nhập";
             this.btn_dnkh.UseVisualStyleBackColor = true;
+            this.btn_dnkh.Click += new System.EventHandler(this.btn_dnkh_Click);
             // 
             // DangNhap
             // 

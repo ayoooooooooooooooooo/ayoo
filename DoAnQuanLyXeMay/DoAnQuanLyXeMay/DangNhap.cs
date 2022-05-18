@@ -33,5 +33,10 @@ namespace DoAnQuanLyXeMay
             if (h == DialogResult.OK)
                 Application.Exit();
         }
+
+        private void btn_dnkh_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
