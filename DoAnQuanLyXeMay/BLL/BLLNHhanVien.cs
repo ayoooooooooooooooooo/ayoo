@@ -16,6 +16,16 @@ namespace BLL
         {
             return dalnv.dsNhanVien();
         }
-
+        public bool dangNhapNV(string tk,string mk)
+        {
+            List<NHANVIEN> listnv = dsNhanVien();
+            foreach(NHANVIEN a in listnv)
+            {
+                if (tk.Equals(a.TAIKHOAN) && mk.Equals(a.MATKHAU))
+                    return true;
+            }    
+            return false;
+        }
+       
     }
 }
