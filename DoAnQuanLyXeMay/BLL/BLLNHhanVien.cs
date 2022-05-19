@@ -12,6 +12,13 @@ namespace BLL
     {
         DALNhanVien dalnv= new DALNhanVien();
         public BLLNHhanVien() { }
+        
+        public bool BLLthemNV(NHANVIEN nv)
+        {
+            dalnv.DALthemNV(nv);
+
+            return true;
+        }
         public List<NHANVIEN> dsNhanVien()
         {
             return dalnv.dsNhanVien();

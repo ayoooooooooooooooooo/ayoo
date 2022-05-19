@@ -45,3 +45,52 @@ C:\cac\Học kì 1 Năm 3\PTPM\ayoo\DoAnQuanLyXeMay\DoAnQuanLyXeMay\obj\Debug\Do
 C:\cac\Học kì 1 Năm 3\PTPM\ayoo\DoAnQuanLyXeMay\DoAnQuanLyXeMay\obj\Debug\DoAnQuanLyXeMay.DangNhapNV.resources
 C:\cac\Học kì 1 Năm 3\PTPM\ayoo\DoAnQuanLyXeMay\DoAnQuanLyXeMay\bin\Debug\ThietkeControl.dll
 C:\cac\Học kì 1 Năm 3\PTPM\ayoo\DoAnQuanLyXeMay\DoAnQuanLyXeMay\bin\Debug\ThietkeControl.pdb
+D:\Visual Studio\DoAnQuanLyXeMay\DoAnQuanLyXeMay\bin\Debug\DoAnQuanLyXeMay.exe.config
+D:\Visual Studio\DoAnQuanLyXeMay\DoAnQuanLyXeMay\bin\Debug\DoAnQuanLyXeMay.exe
+D:\Visual Studio\DoAnQuanLyXeMay\DoAnQuanLyXeMay\bin\Debug\DoAnQuanLyXeMay.pdb
+D:\Visual Studio\DoAnQuanLyXeMay\DoAnQuanLyXeMay\bin\Debug\BLL.dll
+D:\Visual Studio\DoAnQuanLyXeMay\DoAnQuanLyXeMay\bin\Debug\DAL.dll
+D:\Visual Studio\DoAnQuanLyXeMay\DoAnQuanLyXeMay\bin\Debug\DTO.dll
+D:\Visual Studio\DoAnQuanLyXeMay\DoAnQuanLyXeMay\bin\Debug\ThietkeControl.dll
+D:\Visual Studio\DoAnQuanLyXeMay\DoAnQuanLyXeMay\bin\Debug\BLL.pdb
+D:\Visual Studio\DoAnQuanLyXeMay\DoAnQuanLyXeMay\bin\Debug\DAL.pdb
+D:\Visual Studio\DoAnQuanLyXeMay\DoAnQuanLyXeMay\bin\Debug\DAL.dll.config
+D:\Visual Studio\DoAnQuanLyXeMay\DoAnQuanLyXeMay\bin\Debug\DTO.pdb
+D:\Visual Studio\DoAnQuanLyXeMay\DoAnQuanLyXeMay\bin\Debug\DTO.dll.config
+D:\Visual Studio\DoAnQuanLyXeMay\DoAnQuanLyXeMay\bin\Debug\ThietkeControl.pdb
+D:\Visual Studio\DoAnQuanLyXeMay\DoAnQuanLyXeMay\obj\Debug\GUI.csproj.AssemblyReference.cache
+D:\Visual Studio\DoAnQuanLyXeMay\DoAnQuanLyXeMay\obj\Debug\GUI.csproj.SuggestedBindingRedirects.cache
+D:\Visual Studio\DoAnQuanLyXeMay\DoAnQuanLyXeMay\obj\Debug\DoAnQuanLyXeMay.DangNhap.resources
+D:\Visual Studio\DoAnQuanLyXeMay\DoAnQuanLyXeMay\obj\Debug\DoAnQuanLyXeMay.DangNhapNV.resources
+D:\Visual Studio\DoAnQuanLyXeMay\DoAnQuanLyXeMay\obj\Debug\DoAnQuanLyXeMay.Form1.resources
+D:\Visual Studio\DoAnQuanLyXeMay\DoAnQuanLyXeMay\obj\Debug\DoAnQuanLyXeMay.Properties.Resources.resources
+D:\Visual Studio\DoAnQuanLyXeMay\DoAnQuanLyXeMay\obj\Debug\GUI.csproj.GenerateResource.cache
+D:\Visual Studio\DoAnQuanLyXeMay\DoAnQuanLyXeMay\obj\Debug\GUI.csproj.CoreCompileInputs.cache
+D:\Visual Studio\DoAnQuanLyXeMay\DoAnQuanLyXeMay\obj\Debug\GUI.csproj.CopyComplete
+D:\Visual Studio\DoAnQuanLyXeMay\DoAnQuanLyXeMay\obj\Debug\DoAnQuanLyXeMay.exe
+D:\Visual Studio\DoAnQuanLyXeMay\DoAnQuanLyXeMay\obj\Debug\DoAnQuanLyXeMay.pdb
+D:\HitHub\ayoo\DoAnQuanLyXeMay\DoAnQuanLyXeMay\bin\Debug\DoAnQuanLyXeMay.exe.config
+D:\HitHub\ayoo\DoAnQuanLyXeMay\DoAnQuanLyXeMay\bin\Debug\DoAnQuanLyXeMay.exe
+D:\HitHub\ayoo\DoAnQuanLyXeMay\DoAnQuanLyXeMay\bin\Debug\DoAnQuanLyXeMay.pdb
+D:\HitHub\ayoo\DoAnQuanLyXeMay\DoAnQuanLyXeMay\bin\Debug\BLL.dll
+D:\HitHub\ayoo\DoAnQuanLyXeMay\DoAnQuanLyXeMay\bin\Debug\DAL.dll
+D:\HitHub\ayoo\DoAnQuanLyXeMay\DoAnQuanLyXeMay\bin\Debug\DTO.dll
+D:\HitHub\ayoo\DoAnQuanLyXeMay\DoAnQuanLyXeMay\bin\Debug\ThietkeControl.dll
+D:\HitHub\ayoo\DoAnQuanLyXeMay\DoAnQuanLyXeMay\bin\Debug\BLL.pdb
+D:\HitHub\ayoo\DoAnQuanLyXeMay\DoAnQuanLyXeMay\bin\Debug\DAL.pdb
+D:\HitHub\ayoo\DoAnQuanLyXeMay\DoAnQuanLyXeMay\bin\Debug\DAL.dll.config
+D:\HitHub\ayoo\DoAnQuanLyXeMay\DoAnQuanLyXeMay\bin\Debug\DTO.pdb
+D:\HitHub\ayoo\DoAnQuanLyXeMay\DoAnQuanLyXeMay\bin\Debug\DTO.dll.config
+D:\HitHub\ayoo\DoAnQuanLyXeMay\DoAnQuanLyXeMay\bin\Debug\ThietkeControl.pdb
+D:\HitHub\ayoo\DoAnQuanLyXeMay\DoAnQuanLyXeMay\obj\Debug\GUI.csproj.AssemblyReference.cache
+D:\HitHub\ayoo\DoAnQuanLyXeMay\DoAnQuanLyXeMay\obj\Debug\GUI.csproj.SuggestedBindingRedirects.cache
+D:\HitHub\ayoo\DoAnQuanLyXeMay\DoAnQuanLyXeMay\obj\Debug\DoAnQuanLyXeMay.DangNhap.resources
+D:\HitHub\ayoo\DoAnQuanLyXeMay\DoAnQuanLyXeMay\obj\Debug\DoAnQuanLyXeMay.DangNhapNV.resources
+D:\HitHub\ayoo\DoAnQuanLyXeMay\DoAnQuanLyXeMay\obj\Debug\DoAnQuanLyXeMay.Form1.resources
+D:\HitHub\ayoo\DoAnQuanLyXeMay\DoAnQuanLyXeMay\obj\Debug\DoAnQuanLyXeMay.Properties.Resources.resources
+D:\HitHub\ayoo\DoAnQuanLyXeMay\DoAnQuanLyXeMay\obj\Debug\GUI.csproj.GenerateResource.cache
+D:\HitHub\ayoo\DoAnQuanLyXeMay\DoAnQuanLyXeMay\obj\Debug\GUI.csproj.CoreCompileInputs.cache
+D:\HitHub\ayoo\DoAnQuanLyXeMay\DoAnQuanLyXeMay\obj\Debug\GUI.csproj.CopyComplete
+D:\HitHub\ayoo\DoAnQuanLyXeMay\DoAnQuanLyXeMay\obj\Debug\DoAnQuanLyXeMay.exe
+D:\HitHub\ayoo\DoAnQuanLyXeMay\DoAnQuanLyXeMay\obj\Debug\DoAnQuanLyXeMay.pdb
+D:\HitHub\ayoo\DoAnQuanLyXeMay\DoAnQuanLyXeMay\obj\Debug\DoAnQuanLyXeMay.themnv.resources

@@ -12,3 +12,10 @@ C:\cac\Học kì 1 Năm 3\PTPM\ayoo\DoAnQuanLyXeMay\DTO\obj\Debug\DTO.csproj.Ass
 C:\cac\Học kì 1 Năm 3\PTPM\ayoo\DoAnQuanLyXeMay\DTO\obj\Debug\DTO.csproj.CoreCompileInputs.cache
 C:\cac\Học kì 1 Năm 3\PTPM\ayoo\DoAnQuanLyXeMay\DTO\obj\Debug\DTO.dll
 C:\cac\Học kì 1 Năm 3\PTPM\ayoo\DoAnQuanLyXeMay\DTO\obj\Debug\DTO.pdb
+D:\Visual Studio\DoAnQuanLyXeMay\DTO\bin\Debug\DTO.dll.config
+D:\Visual Studio\DoAnQuanLyXeMay\DTO\bin\Debug\DTO.dll
+D:\Visual Studio\DoAnQuanLyXeMay\DTO\bin\Debug\DTO.pdb
+D:\Visual Studio\DoAnQuanLyXeMay\DTO\obj\Debug\DTO.csproj.AssemblyReference.cache
+D:\Visual Studio\DoAnQuanLyXeMay\DTO\obj\Debug\DTO.csproj.CoreCompileInputs.cache
+D:\Visual Studio\DoAnQuanLyXeMay\DTO\obj\Debug\DTO.dll
+D:\Visual Studio\DoAnQuanLyXeMay\DTO\obj\Debug\DTO.pdb
