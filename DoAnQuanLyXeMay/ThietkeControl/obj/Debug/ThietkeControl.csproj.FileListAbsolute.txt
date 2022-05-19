@@ -1,0 +1,6 @@
+C:\cac\Học kì 1 Năm 3\PTPM\ayoo\DoAnQuanLyXeMay\ThietkeControl\bin\Debug\ThietkeControl.dll
+C:\cac\Học kì 1 Năm 3\PTPM\ayoo\DoAnQuanLyXeMay\ThietkeControl\bin\Debug\ThietkeControl.pdb
+C:\cac\Học kì 1 Năm 3\PTPM\ayoo\DoAnQuanLyXeMay\ThietkeControl\obj\Debug\ThietkeControl.csproj.AssemblyReference.cache
+C:\cac\Học kì 1 Năm 3\PTPM\ayoo\DoAnQuanLyXeMay\ThietkeControl\obj\Debug\ThietkeControl.csproj.CoreCompileInputs.cache
+C:\cac\Học kì 1 Năm 3\PTPM\ayoo\DoAnQuanLyXeMay\ThietkeControl\obj\Debug\ThietkeControl.dll
+C:\cac\Học kì 1 Năm 3\PTPM\ayoo\DoAnQuanLyXeMay\ThietkeControl\obj\Debug\ThietkeControl.pdb

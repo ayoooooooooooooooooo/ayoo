@@ -22,7 +22,7 @@ namespace DoAnQuanLyXeMay
         {
             if (bllnv.dangNhapNV(txt_tknv.Text, txt_mknv.Text))
             {
-                DangkiNV a = new DangkiNV();
+                DangNhap a = new DangNhap();
                 a.Show();
             }
             else
@@ -31,6 +31,11 @@ namespace DoAnQuanLyXeMay
                 txt_tknv.Focus();
 
             }    
+        }
+
+        private void DangNhapNV_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

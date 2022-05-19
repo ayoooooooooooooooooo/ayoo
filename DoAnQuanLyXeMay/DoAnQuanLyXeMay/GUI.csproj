@@ -45,18 +45,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DangkiKH.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="DangkiKH.designer.cs">
-      <DependentUpon>DangkiKH.cs</DependentUpon>
-    </Compile>
-    <Compile Include="DangkiNV.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="DangkiNV.designer.cs">
-      <DependentUpon>DangkiNV.cs</DependentUpon>
-    </Compile>
     <Compile Include="DangNhap.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -77,12 +65,6 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="DangkiKH.resx">
-      <DependentUpon>DangkiKH.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="DangkiNV.resx">
-      <DependentUpon>DangkiNV.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="DangNhap.resx">
       <DependentUpon>DangNhap.cs</DependentUpon>
     </EmbeddedResource>
@@ -127,6 +109,10 @@
     <ProjectReference Include="..\DTO\DTO.csproj">
       <Project>{75895E0D-8AB4-44D6-B13A-A14DCA340CB3}</Project>
       <Name>DTO</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ThietkeControl\ThietkeControl.csproj">
+      <Project>{0AB8934B-4695-40E1-A92A-EAE6DBF180F4}</Project>
+      <Name>ThietkeControl</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

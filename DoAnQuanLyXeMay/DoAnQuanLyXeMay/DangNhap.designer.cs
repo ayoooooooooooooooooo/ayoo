@@ -66,6 +66,8 @@
             this.btn_thoat.Text = "Thoát";
             this.btn_thoat.UseVisualStyleBackColor = true;
             this.btn_thoat.Click += new System.EventHandler(this.btn_thoat_Click);
+            this.btn_thoat.MouseLeave += new System.EventHandler(this.btn_thoat_MouseLeave);
+            this.btn_thoat.MouseHover += new System.EventHandler(this.btn_thoat_MouseHover);
             // 
             // label2
             // 
@@ -107,6 +109,8 @@
             this.btn_dnkh.Text = "Đăng Nhập";
             this.btn_dnkh.UseVisualStyleBackColor = true;
             this.btn_dnkh.Click += new System.EventHandler(this.btn_dnkh_Click);
+            this.btn_dnkh.MouseLeave += new System.EventHandler(this.btn_dnkh_MouseLeave);
+            this.btn_dnkh.MouseHover += new System.EventHandler(this.btn_dnkh_MouseHover);
             // 
             // DangNhap
             // 

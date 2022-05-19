@@ -38,5 +38,45 @@ namespace DoAnQuanLyXeMay
             DangNhapNV a = new DangNhapNV();
             a.Show();
         }
+       
+        private void button1_MouseMove(object sender, MouseEventArgs e)
+        {
+            
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            
+            
+
+
+        }
+        
+    private void pictureBox1_MouseMove(object sender, MouseEventArgs e)
+        {
+            
+         
+        }
+
+        private void button1_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            
+        }
+
+        private void button1_MouseHover(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void button1_MouseLeave(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void buttonDN1_Click(object sender, EventArgs e)
+        {
+            DangNhapNV a = new DangNhapNV();
+            a.Show();
+        }
     }
 }

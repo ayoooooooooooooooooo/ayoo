@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.buttonDN1 = new ThietkeControl.ButtonDN();
             this.SuspendLayout();
             // 
             // comboBox1
@@ -41,22 +41,32 @@
             this.comboBox1.TabIndex = 0;
             this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
-            // button1
+            // buttonDN1
             // 
-            this.button1.Location = new System.Drawing.Point(585, 132);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 1;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.buttonDN1.BackColor = System.Drawing.Color.MediumSlateBlue;
+            this.buttonDN1.BackgroundColor = System.Drawing.Color.MediumSlateBlue;
+            this.buttonDN1.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.buttonDN1.BorderRadius = 20;
+            this.buttonDN1.BorderSize = 0;
+            this.buttonDN1.FlatAppearance.BorderSize = 0;
+            this.buttonDN1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonDN1.ForeColor = System.Drawing.Color.White;
+            this.buttonDN1.Location = new System.Drawing.Point(368, 322);
+            this.buttonDN1.Name = "buttonDN1";
+            this.buttonDN1.Size = new System.Drawing.Size(325, 148);
+            this.buttonDN1.TabIndex = 1;
+            this.buttonDN1.Text = "buttonDN1";
+            this.buttonDN1.TextColor = System.Drawing.Color.White;
+            this.buttonDN1.UseVisualStyleBackColor = false;
+            this.buttonDN1.Click += new System.EventHandler(this.buttonDN1_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.Black;
             this.ClientSize = new System.Drawing.Size(1033, 589);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.buttonDN1);
             this.Controls.Add(this.comboBox1);
             this.Name = "Form1";
             this.Text = "Form1";
@@ -68,7 +78,7 @@
         #endregion
 
         private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.Button button1;
+        private ThietkeControl.ButtonDN buttonDN1;
     }
 }
 

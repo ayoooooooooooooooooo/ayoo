@@ -41,7 +41,7 @@ C:\Users\Cu Bon\Documents\GitHub\ayoo\DoAnQuanLyXeMay\DoAnQuanLyXeMay\obj\Debug\
 C:\Users\Cu Bon\Documents\GitHub\ayoo\DoAnQuanLyXeMay\DoAnQuanLyXeMay\obj\Debug\DoAnQuanLyXeMay.DangkiKH.resources
 C:\Users\Cu Bon\Documents\GitHub\ayoo\DoAnQuanLyXeMay\DoAnQuanLyXeMay\obj\Debug\DoAnQuanLyXeMay.DangNhap.resources
 C:\Users\Cu Bon\Documents\GitHub\ayoo\DoAnQuanLyXeMay\DoAnQuanLyXeMay\obj\Debug\DoAnQuanLyXeMay.DangNhapNV.resources
-C:\cac\Học kì 1 Năm 3\PTPM\ayoo\DoAnQuanLyXeMay\DoAnQuanLyXeMay\obj\Debug\DoAnQuanLyXeMay.DangkiKH.resources
-C:\cac\Học kì 1 Năm 3\PTPM\ayoo\DoAnQuanLyXeMay\DoAnQuanLyXeMay\obj\Debug\DoAnQuanLyXeMay.DangkiNV.resources
 C:\cac\Học kì 1 Năm 3\PTPM\ayoo\DoAnQuanLyXeMay\DoAnQuanLyXeMay\obj\Debug\DoAnQuanLyXeMay.DangNhap.resources
 C:\cac\Học kì 1 Năm 3\PTPM\ayoo\DoAnQuanLyXeMay\DoAnQuanLyXeMay\obj\Debug\DoAnQuanLyXeMay.DangNhapNV.resources
+C:\cac\Học kì 1 Năm 3\PTPM\ayoo\DoAnQuanLyXeMay\DoAnQuanLyXeMay\bin\Debug\ThietkeControl.dll
+C:\cac\Học kì 1 Năm 3\PTPM\ayoo\DoAnQuanLyXeMay\DoAnQuanLyXeMay\bin\Debug\ThietkeControl.pdb
