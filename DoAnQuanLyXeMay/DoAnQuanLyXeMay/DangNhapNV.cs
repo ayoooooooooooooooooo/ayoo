@@ -22,8 +22,8 @@ namespace DoAnQuanLyXeMay
         {
             if (bllnv.dangNhapNV(txt_tknv.Text, txt_mknv.Text))
             {
-                DangkiNV a = new DangkiNV();
-                a.Show();
+                //DangkiNV a = new DangkiNV();
+                //a.Show();
             }
             else
             {
