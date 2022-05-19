@@ -31,3 +31,14 @@ D:\Visual Studio\DoAnQuanLyXeMay\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cach
 D:\Visual Studio\DoAnQuanLyXeMay\DAL\obj\Debug\DAL.csproj.CopyComplete
 D:\Visual Studio\DoAnQuanLyXeMay\DAL\obj\Debug\DAL.dll
 D:\Visual Studio\DoAnQuanLyXeMay\DAL\obj\Debug\DAL.pdb
+D:\HitHub\ayoo\DoAnQuanLyXeMay\DAL\bin\Debug\DAL.dll.config
+D:\HitHub\ayoo\DoAnQuanLyXeMay\DAL\bin\Debug\DAL.dll
+D:\HitHub\ayoo\DoAnQuanLyXeMay\DAL\bin\Debug\DAL.pdb
+D:\HitHub\ayoo\DoAnQuanLyXeMay\DAL\bin\Debug\DTO.dll
+D:\HitHub\ayoo\DoAnQuanLyXeMay\DAL\bin\Debug\DTO.pdb
+D:\HitHub\ayoo\DoAnQuanLyXeMay\DAL\bin\Debug\DTO.dll.config
+D:\HitHub\ayoo\DoAnQuanLyXeMay\DAL\obj\Debug\DAL.csproj.AssemblyReference.cache
+D:\HitHub\ayoo\DoAnQuanLyXeMay\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+D:\HitHub\ayoo\DoAnQuanLyXeMay\DAL\obj\Debug\DAL.csproj.CopyComplete
+D:\HitHub\ayoo\DoAnQuanLyXeMay\DAL\obj\Debug\DAL.dll
+D:\HitHub\ayoo\DoAnQuanLyXeMay\DAL\obj\Debug\DAL.pdb

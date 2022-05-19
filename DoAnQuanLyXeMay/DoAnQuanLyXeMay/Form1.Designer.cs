@@ -35,7 +35,7 @@
             // comboBox1
             // 
             this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(84, 29);
+            this.comboBox1.Location = new System.Drawing.Point(469, 190);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(121, 21);
             this.comboBox1.TabIndex = 0;
@@ -43,17 +43,17 @@
             // 
             // buttonDN1
             // 
-            this.buttonDN1.BackColor = System.Drawing.Color.MediumSlateBlue;
-            this.buttonDN1.BackgroundColor = System.Drawing.Color.MediumSlateBlue;
-            this.buttonDN1.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.buttonDN1.BorderRadius = 20;
+            this.buttonDN1.BackColor = System.Drawing.SystemColors.GrayText;
+            this.buttonDN1.BackgroundColor = System.Drawing.SystemColors.GrayText;
+            this.buttonDN1.BorderColor = System.Drawing.Color.PeachPuff;
+            this.buttonDN1.BorderRadius = 18;
             this.buttonDN1.BorderSize = 0;
             this.buttonDN1.FlatAppearance.BorderSize = 0;
             this.buttonDN1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonDN1.ForeColor = System.Drawing.Color.White;
-            this.buttonDN1.Location = new System.Drawing.Point(368, 322);
+            this.buttonDN1.Location = new System.Drawing.Point(421, 316);
             this.buttonDN1.Name = "buttonDN1";
-            this.buttonDN1.Size = new System.Drawing.Size(325, 148);
+            this.buttonDN1.Size = new System.Drawing.Size(264, 32);
             this.buttonDN1.TabIndex = 1;
             this.buttonDN1.Text = "buttonDN1";
             this.buttonDN1.TextColor = System.Drawing.Color.White;
@@ -64,7 +64,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.Black;
+            this.BackColor = System.Drawing.Color.BlanchedAlmond;
             this.ClientSize = new System.Drawing.Size(1033, 589);
             this.Controls.Add(this.buttonDN1);
             this.Controls.Add(this.comboBox1);

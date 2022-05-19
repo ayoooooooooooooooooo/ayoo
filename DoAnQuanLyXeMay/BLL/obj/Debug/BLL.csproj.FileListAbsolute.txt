@@ -37,3 +37,16 @@ D:\Visual Studio\DoAnQuanLyXeMay\BLL\obj\Debug\BLL.csproj.CoreCompileInputs.cach
 D:\Visual Studio\DoAnQuanLyXeMay\BLL\obj\Debug\BLL.csproj.CopyComplete
 D:\Visual Studio\DoAnQuanLyXeMay\BLL\obj\Debug\BLL.dll
 D:\Visual Studio\DoAnQuanLyXeMay\BLL\obj\Debug\BLL.pdb
+D:\HitHub\ayoo\DoAnQuanLyXeMay\BLL\bin\Debug\BLL.dll
+D:\HitHub\ayoo\DoAnQuanLyXeMay\BLL\bin\Debug\BLL.pdb
+D:\HitHub\ayoo\DoAnQuanLyXeMay\BLL\bin\Debug\DAL.dll
+D:\HitHub\ayoo\DoAnQuanLyXeMay\BLL\bin\Debug\DTO.dll
+D:\HitHub\ayoo\DoAnQuanLyXeMay\BLL\bin\Debug\DAL.pdb
+D:\HitHub\ayoo\DoAnQuanLyXeMay\BLL\bin\Debug\DAL.dll.config
+D:\HitHub\ayoo\DoAnQuanLyXeMay\BLL\bin\Debug\DTO.pdb
+D:\HitHub\ayoo\DoAnQuanLyXeMay\BLL\bin\Debug\DTO.dll.config
+D:\HitHub\ayoo\DoAnQuanLyXeMay\BLL\obj\Debug\BLL.csproj.AssemblyReference.cache
+D:\HitHub\ayoo\DoAnQuanLyXeMay\BLL\obj\Debug\BLL.csproj.CoreCompileInputs.cache
+D:\HitHub\ayoo\DoAnQuanLyXeMay\BLL\obj\Debug\BLL.csproj.CopyComplete
+D:\HitHub\ayoo\DoAnQuanLyXeMay\BLL\obj\Debug\BLL.dll
+D:\HitHub\ayoo\DoAnQuanLyXeMay\BLL\obj\Debug\BLL.pdb

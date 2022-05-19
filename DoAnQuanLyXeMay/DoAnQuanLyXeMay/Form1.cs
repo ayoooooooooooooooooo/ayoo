@@ -77,6 +77,7 @@ namespace DoAnQuanLyXeMay
         {
             DangNhapNV a = new DangNhapNV();
             a.Show();
+            
         }
     }
 }
