@@ -122,6 +122,7 @@ namespace DoAnQuanLyXeMay
             this.Controls.Add(this.btn_dnnv);
             this.Name = "DangNhapNV";
             this.Text = "DangNhapNV";
+            this.Load += new System.EventHandler(this.DangNhapNV_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -22,8 +22,13 @@ namespace DoAnQuanLyXeMay
         {
             if (bllnv.dangNhapNV(txt_tknv.Text, txt_mknv.Text))
             {
+<<<<<<< HEAD
                 //DangkiNV a = new DangkiNV();
                 //a.Show();
+=======
+                DangNhap a = new DangNhap();
+                a.Show();
+>>>>>>> 1b92c68af9b20fed72fc88478c54c2c1628e964a
             }
             else
             {
@@ -31,6 +36,11 @@ namespace DoAnQuanLyXeMay
                 txt_tknv.Focus();
 
             }    
+        }
+
+        private void DangNhapNV_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
