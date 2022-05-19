@@ -4,3 +4,9 @@ C:\cac\Học kì 1 Năm 3\PTPM\ayoo\DoAnQuanLyXeMay\ThietkeControl\obj\Debug\Thi
 C:\cac\Học kì 1 Năm 3\PTPM\ayoo\DoAnQuanLyXeMay\ThietkeControl\obj\Debug\ThietkeControl.csproj.CoreCompileInputs.cache
 C:\cac\Học kì 1 Năm 3\PTPM\ayoo\DoAnQuanLyXeMay\ThietkeControl\obj\Debug\ThietkeControl.dll
 C:\cac\Học kì 1 Năm 3\PTPM\ayoo\DoAnQuanLyXeMay\ThietkeControl\obj\Debug\ThietkeControl.pdb
+D:\Visual Studio\DoAnQuanLyXeMay\ThietkeControl\bin\Debug\ThietkeControl.dll
+D:\Visual Studio\DoAnQuanLyXeMay\ThietkeControl\bin\Debug\ThietkeControl.pdb
+D:\Visual Studio\DoAnQuanLyXeMay\ThietkeControl\obj\Debug\ThietkeControl.csproj.AssemblyReference.cache
+D:\Visual Studio\DoAnQuanLyXeMay\ThietkeControl\obj\Debug\ThietkeControl.csproj.CoreCompileInputs.cache
+D:\Visual Studio\DoAnQuanLyXeMay\ThietkeControl\obj\Debug\ThietkeControl.dll
+D:\Visual Studio\DoAnQuanLyXeMay\ThietkeControl\obj\Debug\ThietkeControl.pdb
