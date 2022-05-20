@@ -12,7 +12,7 @@ namespace BLL
     {
         DALHDXuat daHDXuat = new DALHDXuat();
         public BLLHDXuat() { }
-        public List<HOADONXUAT> dsNhanVien()
+        public List<HOADONXUAT> dsHDXuat()
         {
             return daHDXuat.dsHDXuat();
         }

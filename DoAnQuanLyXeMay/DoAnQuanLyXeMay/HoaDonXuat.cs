@@ -7,7 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+using BLL;
+using DTO;
 namespace DoAnQuanLyXeMay
 {
     public partial class HoaDonXuat : Form
@@ -16,13 +17,13 @@ namespace DoAnQuanLyXeMay
         {
             InitializeComponent();
         }
- 
+ BLLHDXuat bLLHDXuat=new BLLHDXuat();
         private void HoaDonXuat_Load(object sender, EventArgs e)
         {
-            //dataGridView1.DataSource = xldl.loadhdx();
-            //Databingding(xldl.loadhdx());
-            //txt_manv.Enabled = false;
-            //btn_luu.Enabled = false;
+            dataGridView1.DataSource = bLLHDXuat.dsHDXuat();
+            //Databingding(bLLHDXuat.dsHDXuat());
+            txt_manv.Enabled = false;
+            btn_luu.Enabled = false;
         }
         void Databingding(DataTable pDT)
         {
@@ -149,7 +150,12 @@ namespace DoAnQuanLyXeMay
              //xldl.inHD(dataGridView1.CurrentRow.Cells[1].Value.ToString());
          }
 
-         private void ctx_hdxuat_Opening(object sender, CancelEventArgs e)
+        private void groupBox1_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void ctx_hdxuat_Opening(object sender, CancelEventArgs e)
          {
 
          }

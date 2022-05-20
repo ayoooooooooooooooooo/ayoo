@@ -49,16 +49,16 @@ namespace DoAnQuanLyXeMay
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.ctx_hdxuat = new System.Windows.Forms.ContextMenuStrip(this.components);
-            this.btn_themhdx = new System.Windows.Forms.ToolStripMenuItem();
-            this.btn_xoahdx = new System.Windows.Forms.ToolStripMenuItem();
-            this.btn_suahdx = new System.Windows.Forms.ToolStripMenuItem();
-            this.btn_xcthdx = new System.Windows.Forms.ToolStripMenuItem();
             this.cl_mhd = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.cl_makh = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.cl_masp = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.cl_manv = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.cl_soluong = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ctx_hdxuat = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.btn_themhdx = new System.Windows.Forms.ToolStripMenuItem();
+            this.btn_xoahdx = new System.Windows.Forms.ToolStripMenuItem();
+            this.btn_suahdx = new System.Windows.Forms.ToolStripMenuItem();
+            this.btn_xcthdx = new System.Windows.Forms.ToolStripMenuItem();
             this.tableLayoutPanel1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -123,6 +123,7 @@ namespace DoAnQuanLyXeMay
             this.groupBox1.TabIndex = 1;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Hóa đơn";
+            this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
             // button1
             // 
@@ -287,49 +288,6 @@ namespace DoAnQuanLyXeMay
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             this.dataGridView1.SelectionChanged += new System.EventHandler(this.dataGridView1_SelectionChanged);
             // 
-            // ctx_hdxuat
-            // 
-            this.ctx_hdxuat.Font = new System.Drawing.Font("Showcard Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ctx_hdxuat.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.btn_themhdx,
-            this.btn_xoahdx,
-            this.btn_suahdx,
-            this.btn_xcthdx});
-            this.ctx_hdxuat.Name = "ctx_hdnhap";
-            this.ctx_hdxuat.Size = new System.Drawing.Size(153, 114);
-            this.ctx_hdxuat.Opening += new System.ComponentModel.CancelEventHandler(this.ctx_hdxuat_Opening);
-            // 
-            // btn_themhdx
-            // 
-            this.btn_themhdx.Image = ((System.Drawing.Image)(resources.GetObject("btn_themhdx.Image")));
-            this.btn_themhdx.Name = "btn_themhdx";
-            this.btn_themhdx.Size = new System.Drawing.Size(152, 22);
-            this.btn_themhdx.Text = "Thêm";
-            this.btn_themhdx.Click += new System.EventHandler(this.btn_themhdx_Click);
-            // 
-            // btn_xoahdx
-            // 
-            this.btn_xoahdx.Image = ((System.Drawing.Image)(resources.GetObject("btn_xoahdx.Image")));
-            this.btn_xoahdx.Name = "btn_xoahdx";
-            this.btn_xoahdx.Size = new System.Drawing.Size(152, 22);
-            this.btn_xoahdx.Text = "Xóa";
-            this.btn_xoahdx.Click += new System.EventHandler(this.btn_xoahdx_Click);
-            // 
-            // btn_suahdx
-            // 
-            this.btn_suahdx.Image = ((System.Drawing.Image)(resources.GetObject("btn_suahdx.Image")));
-            this.btn_suahdx.Name = "btn_suahdx";
-            this.btn_suahdx.Size = new System.Drawing.Size(152, 22);
-            this.btn_suahdx.Text = "Sửa";
-            this.btn_suahdx.Click += new System.EventHandler(this.btn_suahdx_Click);
-            // 
-            // btn_xcthdx
-            // 
-            this.btn_xcthdx.Image = ((System.Drawing.Image)(resources.GetObject("btn_xcthdx.Image")));
-            this.btn_xcthdx.Name = "btn_xcthdx";
-            this.btn_xcthdx.Size = new System.Drawing.Size(152, 22);
-            this.btn_xcthdx.Text = "Xem chi tiết";
-            // 
             // cl_mhd
             // 
             this.cl_mhd.DataPropertyName = "MAHD";
@@ -364,6 +322,49 @@ namespace DoAnQuanLyXeMay
             this.cl_soluong.HeaderText = "Ngày bán";
             this.cl_soluong.Name = "cl_soluong";
             this.cl_soluong.ReadOnly = true;
+            // 
+            // ctx_hdxuat
+            // 
+            this.ctx_hdxuat.Font = new System.Drawing.Font("Showcard Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ctx_hdxuat.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.btn_themhdx,
+            this.btn_xoahdx,
+            this.btn_suahdx,
+            this.btn_xcthdx});
+            this.ctx_hdxuat.Name = "ctx_hdnhap";
+            this.ctx_hdxuat.Size = new System.Drawing.Size(153, 92);
+            this.ctx_hdxuat.Opening += new System.ComponentModel.CancelEventHandler(this.ctx_hdxuat_Opening);
+            // 
+            // btn_themhdx
+            // 
+            this.btn_themhdx.Image = ((System.Drawing.Image)(resources.GetObject("btn_themhdx.Image")));
+            this.btn_themhdx.Name = "btn_themhdx";
+            this.btn_themhdx.Size = new System.Drawing.Size(152, 22);
+            this.btn_themhdx.Text = "Thêm";
+            this.btn_themhdx.Click += new System.EventHandler(this.btn_themhdx_Click);
+            // 
+            // btn_xoahdx
+            // 
+            this.btn_xoahdx.Image = ((System.Drawing.Image)(resources.GetObject("btn_xoahdx.Image")));
+            this.btn_xoahdx.Name = "btn_xoahdx";
+            this.btn_xoahdx.Size = new System.Drawing.Size(152, 22);
+            this.btn_xoahdx.Text = "Xóa";
+            this.btn_xoahdx.Click += new System.EventHandler(this.btn_xoahdx_Click);
+            // 
+            // btn_suahdx
+            // 
+            this.btn_suahdx.Image = ((System.Drawing.Image)(resources.GetObject("btn_suahdx.Image")));
+            this.btn_suahdx.Name = "btn_suahdx";
+            this.btn_suahdx.Size = new System.Drawing.Size(152, 22);
+            this.btn_suahdx.Text = "Sửa";
+            this.btn_suahdx.Click += new System.EventHandler(this.btn_suahdx_Click);
+            // 
+            // btn_xcthdx
+            // 
+            this.btn_xcthdx.Image = ((System.Drawing.Image)(resources.GetObject("btn_xcthdx.Image")));
+            this.btn_xcthdx.Name = "btn_xcthdx";
+            this.btn_xcthdx.Size = new System.Drawing.Size(152, 22);
+            this.btn_xcthdx.Text = "Xem chi tiết";
             // 
             // HoaDonXuat
             // 

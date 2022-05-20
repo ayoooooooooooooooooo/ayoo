@@ -10,11 +10,11 @@ namespace BLL
 {
     public class BLLHDNhap
     {
-        BLLHDNhap qlHDXuat = new BLLHDNhap();
+        DALHDNhap qlHDXuat = new DALHDNhap();
         public BLLHDNhap() { }
-        public List<BLLHDNhap> dsNhanVien()
+        public List<HOADONNHAP> dsHDNhap()
         {
-            return qlHDXuat.dsNhanVien();
+            return qlHDXuat.dsHDNhap();
         }
     }
 }

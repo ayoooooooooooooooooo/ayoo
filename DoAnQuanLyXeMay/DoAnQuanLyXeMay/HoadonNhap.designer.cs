@@ -303,9 +303,10 @@ namespace DoAnQuanLyXeMay
             // 
             // txt_mahd
             // 
-            this.txt_mahd.Location = new System.Drawing.Point(183, 37);
+            this.txt_mahd.Dock = System.Windows.Forms.DockStyle.Top;
+            this.txt_mahd.Location = new System.Drawing.Point(3, 25);
             this.txt_mahd.Name = "txt_mahd";
-            this.txt_mahd.Size = new System.Drawing.Size(181, 29);
+            this.txt_mahd.Size = new System.Drawing.Size(844, 29);
             this.txt_mahd.TabIndex = 43;
             // 
             // label5

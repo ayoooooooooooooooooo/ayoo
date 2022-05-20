@@ -7,7 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+using BLL;
+using DTO;
 namespace DoAnQuanLyXeMay
 {
     public partial class HoadonNhap : Form
@@ -69,7 +70,7 @@ namespace DoAnQuanLyXeMay
             dt_ngayban.Enabled = false;
         }
 
-        void Databingding(DataTable pDT)
+        void Databingding(List<HOADONNHAP> pDT)
         {
             txt_mahd.DataBindings.Clear();
             txt_masp.DataBindings.Clear();
@@ -90,13 +91,13 @@ namespace DoAnQuanLyXeMay
             manv = manhanvien;
             
         }
-
+        BLLHDNhap bLLHDNhap=new BLLHDNhap();
         private void HoadonNhap_Load(object sender, EventArgs e)
         {
-            //dataGridView1.DataSource = xldl.loadhdn();
-            //Databingding(xldl.loadhdn());
-            //txt_manv.Enabled = false;
-            //btn_them.Enabled = false;
+            dataGridView1.DataSource = bLLHDNhap.dsHDNhap();
+            Databingding(bLLHDNhap.dsHDNhap());
+            txt_manv.Enabled = false;
+            btn_them.Enabled = false;
         }
 
         private void btn_xoahdn_Click(object sender, EventArgs e)
