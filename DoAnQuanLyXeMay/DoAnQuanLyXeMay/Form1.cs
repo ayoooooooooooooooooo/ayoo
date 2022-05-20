@@ -22,9 +22,10 @@ namespace DoAnQuanLyXeMay
        
         private void Form1_Load(object sender, EventArgs e)
         {
-            comboBox1.DataSource = bllnv.dsNhanVien();
+           
             comboBox1.DisplayMember = "TENNV";
             comboBox1.ValueMember = "MANV";
+            comboBox1.DataSource = bllnv.dsNhanVien();
         }
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
@@ -78,6 +79,13 @@ namespace DoAnQuanLyXeMay
             DangNhapNV a = new DangNhapNV();
             a.Show();
             
+        }
+
+        private void buttonDN2_Click(object sender, EventArgs e)
+        {
+            doimknv a = new doimknv(bllnv.BLLLay1NV(comboBox1.SelectedValue.ToString()));
+
+            a.Show();
         }
     }
 }

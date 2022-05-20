@@ -57,11 +57,42 @@
     <Compile Include="DangNhapNV.designer.cs">
       <DependentUpon>DangNhapNV.cs</DependentUpon>
     </Compile>
+    <Compile Include="doimknv.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="doimknv.designer.cs">
+      <DependentUpon>doimknv.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formkho.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formkho.designer.cs">
+      <DependentUpon>formkho.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HoadonNhap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HoadonNhap.designer.cs">
+      <DependentUpon>HoadonNhap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HoaDonXuat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HoaDonXuat.designer.cs">
+      <DependentUpon>HoaDonXuat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="kho.cs" />
+    <Compile Include="nhanvien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="nhanvien.designer.cs">
+      <DependentUpon>nhanvien.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -71,14 +102,35 @@
     <Compile Include="themnv.designer.cs">
       <DependentUpon>themnv.cs</DependentUpon>
     </Compile>
+    <Compile Include="thongtinnv.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="thongtinnv.designer.cs">
+      <DependentUpon>thongtinnv.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="DangNhap.resx">
       <DependentUpon>DangNhap.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="DangNhapNV.resx">
       <DependentUpon>DangNhapNV.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="doimknv.resx">
+      <DependentUpon>doimknv.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formkho.resx">
+      <DependentUpon>formkho.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HoadonNhap.resx">
+      <DependentUpon>HoadonNhap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HoaDonXuat.resx">
+      <DependentUpon>HoaDonXuat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="nhanvien.resx">
+      <DependentUpon>nhanvien.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -92,6 +144,9 @@
     </Compile>
     <EmbeddedResource Include="themnv.resx">
       <DependentUpon>themnv.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="thongtinnv.resx">
+      <DependentUpon>thongtinnv.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

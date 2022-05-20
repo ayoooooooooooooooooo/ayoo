@@ -30,6 +30,7 @@
         {
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.buttonDN1 = new ThietkeControl.ButtonDN();
+            this.buttonDN2 = new ThietkeControl.ButtonDN();
             this.SuspendLayout();
             // 
             // comboBox1
@@ -60,12 +61,32 @@
             this.buttonDN1.UseVisualStyleBackColor = false;
             this.buttonDN1.Click += new System.EventHandler(this.buttonDN1_Click);
             // 
+            // buttonDN2
+            // 
+            this.buttonDN2.BackColor = System.Drawing.SystemColors.GrayText;
+            this.buttonDN2.BackgroundColor = System.Drawing.SystemColors.GrayText;
+            this.buttonDN2.BorderColor = System.Drawing.Color.PeachPuff;
+            this.buttonDN2.BorderRadius = 18;
+            this.buttonDN2.BorderSize = 0;
+            this.buttonDN2.FlatAppearance.BorderSize = 0;
+            this.buttonDN2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonDN2.ForeColor = System.Drawing.Color.White;
+            this.buttonDN2.Location = new System.Drawing.Point(630, 99);
+            this.buttonDN2.Name = "buttonDN2";
+            this.buttonDN2.Size = new System.Drawing.Size(264, 32);
+            this.buttonDN2.TabIndex = 2;
+            this.buttonDN2.Text = "đổi mật khẩu";
+            this.buttonDN2.TextColor = System.Drawing.Color.White;
+            this.buttonDN2.UseVisualStyleBackColor = false;
+            this.buttonDN2.Click += new System.EventHandler(this.buttonDN2_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.BlanchedAlmond;
             this.ClientSize = new System.Drawing.Size(1033, 589);
+            this.Controls.Add(this.buttonDN2);
             this.Controls.Add(this.buttonDN1);
             this.Controls.Add(this.comboBox1);
             this.Name = "Form1";
@@ -79,6 +100,7 @@
 
         private System.Windows.Forms.ComboBox comboBox1;
         private ThietkeControl.ButtonDN buttonDN1;
+        private ThietkeControl.ButtonDN buttonDN2;
     }
 }
 

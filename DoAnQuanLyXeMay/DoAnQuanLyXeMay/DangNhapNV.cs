@@ -22,7 +22,7 @@ namespace DoAnQuanLyXeMay
         {
             if (bllnv.dangNhapNV(txt_tknv.Text, txt_mknv.Text))
             {
-                themnv a = new themnv();
+                nhanvien a = new nhanvien();
                 a.Show();
             }
             else

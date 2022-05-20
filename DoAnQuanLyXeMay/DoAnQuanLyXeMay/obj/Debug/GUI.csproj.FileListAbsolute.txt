@@ -94,3 +94,9 @@ D:\HitHub\ayoo\DoAnQuanLyXeMay\DoAnQuanLyXeMay\obj\Debug\GUI.csproj.CopyComplete
 D:\HitHub\ayoo\DoAnQuanLyXeMay\DoAnQuanLyXeMay\obj\Debug\DoAnQuanLyXeMay.exe
 D:\HitHub\ayoo\DoAnQuanLyXeMay\DoAnQuanLyXeMay\obj\Debug\DoAnQuanLyXeMay.pdb
 D:\HitHub\ayoo\DoAnQuanLyXeMay\DoAnQuanLyXeMay\obj\Debug\DoAnQuanLyXeMay.themnv.resources
+D:\HitHub\ayoo\DoAnQuanLyXeMay\DoAnQuanLyXeMay\obj\Debug\DoAnQuanLyXeMay.doimknv.resources
+D:\HitHub\ayoo\DoAnQuanLyXeMay\DoAnQuanLyXeMay\obj\Debug\DoAnQuanLyXeMay.formkho.resources
+D:\HitHub\ayoo\DoAnQuanLyXeMay\DoAnQuanLyXeMay\obj\Debug\DoAnQuanLyXeMay.HoadonNhap.resources
+D:\HitHub\ayoo\DoAnQuanLyXeMay\DoAnQuanLyXeMay\obj\Debug\DoAnQuanLyXeMay.HoaDonXuat.resources
+D:\HitHub\ayoo\DoAnQuanLyXeMay\DoAnQuanLyXeMay\obj\Debug\DoAnQuanLyXeMay.nhanvien.resources
+D:\HitHub\ayoo\DoAnQuanLyXeMay\DoAnQuanLyXeMay\obj\Debug\DoAnQuanLyXeMay.thongtinnv.resources

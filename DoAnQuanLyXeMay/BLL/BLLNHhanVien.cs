@@ -19,6 +19,16 @@ namespace BLL
 
             return true;
         }
+        public bool BLLSuaNV(NHANVIEN nv)
+        {
+            dalnv.DALSuaNV(nv);
+            return true;
+        }
+        public NHANVIEN BLLLay1NV(string manv)
+        {
+            
+            return dalnv.DALLay1NV(manv);
+        }
         public List<NHANVIEN> dsNhanVien()
         {
             return dalnv.dsNhanVien();
