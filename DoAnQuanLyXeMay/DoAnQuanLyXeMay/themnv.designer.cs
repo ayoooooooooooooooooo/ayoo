@@ -54,7 +54,7 @@
             this.label13 = new System.Windows.Forms.Label();
             this.cbo_gt = new System.Windows.Forms.ComboBox();
             this.cbo_pl = new System.Windows.Forms.ComboBox();
-            this.buttonDN1 = new ThietkeControl.ButtonDN();
+            this.btn_them = new ThietkeControl.ButtonDN();
             this.SuspendLayout();
             // 
             // label1
@@ -336,24 +336,24 @@
             this.cbo_pl.Size = new System.Drawing.Size(225, 32);
             this.cbo_pl.TabIndex = 27;
             // 
-            // buttonDN1
+            // btn_them
             // 
-            this.buttonDN1.BackColor = System.Drawing.Color.MediumSlateBlue;
-            this.buttonDN1.BackgroundColor = System.Drawing.Color.MediumSlateBlue;
-            this.buttonDN1.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.buttonDN1.BorderRadius = 20;
-            this.buttonDN1.BorderSize = 0;
-            this.buttonDN1.FlatAppearance.BorderSize = 0;
-            this.buttonDN1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonDN1.ForeColor = System.Drawing.Color.White;
-            this.buttonDN1.Location = new System.Drawing.Point(353, 588);
-            this.buttonDN1.Name = "buttonDN1";
-            this.buttonDN1.Size = new System.Drawing.Size(150, 40);
-            this.buttonDN1.TabIndex = 28;
-            this.buttonDN1.Text = "buttonDN1";
-            this.buttonDN1.TextColor = System.Drawing.Color.White;
-            this.buttonDN1.UseVisualStyleBackColor = false;
-            this.buttonDN1.Click += new System.EventHandler(this.buttonDN1_Click);
+            this.btn_them.BackColor = System.Drawing.Color.MediumSlateBlue;
+            this.btn_them.BackgroundColor = System.Drawing.Color.MediumSlateBlue;
+            this.btn_them.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.btn_them.BorderRadius = 20;
+            this.btn_them.BorderSize = 0;
+            this.btn_them.FlatAppearance.BorderSize = 0;
+            this.btn_them.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_them.ForeColor = System.Drawing.Color.White;
+            this.btn_them.Location = new System.Drawing.Point(353, 588);
+            this.btn_them.Name = "btn_them";
+            this.btn_them.Size = new System.Drawing.Size(150, 40);
+            this.btn_them.TabIndex = 28;
+            this.btn_them.Text = "Thêm";
+            this.btn_them.TextColor = System.Drawing.Color.White;
+            this.btn_them.UseVisualStyleBackColor = false;
+            this.btn_them.Click += new System.EventHandler(this.buttonDN1_Click);
             // 
             // themnv
             // 
@@ -361,7 +361,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(935, 674);
-            this.Controls.Add(this.buttonDN1);
+            this.Controls.Add(this.btn_them);
             this.Controls.Add(this.cbo_pl);
             this.Controls.Add(this.cbo_gt);
             this.Controls.Add(this.label13);
@@ -424,6 +424,6 @@
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.ComboBox cbo_gt;
         private System.Windows.Forms.ComboBox cbo_pl;
-        private ThietkeControl.ButtonDN buttonDN1;
+        private ThietkeControl.ButtonDN btn_them;
     }
 }

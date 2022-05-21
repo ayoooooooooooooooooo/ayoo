@@ -84,7 +84,6 @@ D:\HitHub\ayoo\DoAnQuanLyXeMay\DoAnQuanLyXeMay\bin\Debug\DTO.dll.config
 D:\HitHub\ayoo\DoAnQuanLyXeMay\DoAnQuanLyXeMay\bin\Debug\ThietkeControl.pdb
 D:\HitHub\ayoo\DoAnQuanLyXeMay\DoAnQuanLyXeMay\obj\Debug\GUI.csproj.AssemblyReference.cache
 D:\HitHub\ayoo\DoAnQuanLyXeMay\DoAnQuanLyXeMay\obj\Debug\GUI.csproj.SuggestedBindingRedirects.cache
-D:\HitHub\ayoo\DoAnQuanLyXeMay\DoAnQuanLyXeMay\obj\Debug\DoAnQuanLyXeMay.DangNhap.resources
 D:\HitHub\ayoo\DoAnQuanLyXeMay\DoAnQuanLyXeMay\obj\Debug\DoAnQuanLyXeMay.DangNhapNV.resources
 D:\HitHub\ayoo\DoAnQuanLyXeMay\DoAnQuanLyXeMay\obj\Debug\DoAnQuanLyXeMay.Form1.resources
 D:\HitHub\ayoo\DoAnQuanLyXeMay\DoAnQuanLyXeMay\obj\Debug\DoAnQuanLyXeMay.Properties.Resources.resources

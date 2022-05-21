@@ -65,6 +65,14 @@ namespace DAL
             NHANVIEN nhanvien = qL.NHANVIENs.Where(t => t.MANV == manv).FirstOrDefault();
             return nhanvien;
         }
+
+        public NHANVIEN DALLay1NV(string tk,string mk)
+        {
+
+
+            NHANVIEN nhanvien = qL.NHANVIENs.Where(t => t.TAIKHOAN == tk ).FirstOrDefault();
+            return nhanvien;
+        }
         public List<NHANVIEN> dsNhanVien()
         {
             return qL.NHANVIENs.Select(t=>t).ToList();

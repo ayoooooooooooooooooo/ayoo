@@ -70,21 +70,7 @@ namespace DoAnQuanLyXeMay
             dt_ngayban.Enabled = false;
         }
 
-        void Databingding(List<HOADONNHAP> pDT)
-        {
-            txt_mahd.DataBindings.Clear();
-            txt_masp.DataBindings.Clear();
-            txt_soluong.DataBindings.Clear();
-            txt_manv.DataBindings.Clear();
-            dt_ngayban.DataBindings.Clear();
-
-            txt_masp.DataBindings.Add("Text", pDT, "MASP");
-            txt_mahd.DataBindings.Add("Text", pDT, "MAHD");
-            txt_soluong.DataBindings.Add("Text", pDT, "SL");
-            txt_manv.DataBindings.Add("Text", pDT, "MANV");
-            dt_ngayban.DataBindings.Add("Text", pDT, "NGAYBAN");
-    
-        }
+     
         string manv="";
         public HoadonNhap(string manhanvien):this()
         {
@@ -95,7 +81,7 @@ namespace DoAnQuanLyXeMay
         private void HoadonNhap_Load(object sender, EventArgs e)
         {
             dataGridView1.DataSource = bLLHDNhap.dsHDNhap();
-            Databingding(bLLHDNhap.dsHDNhap());
+      
             txt_manv.Enabled = false;
             btn_them.Enabled = false;
         }

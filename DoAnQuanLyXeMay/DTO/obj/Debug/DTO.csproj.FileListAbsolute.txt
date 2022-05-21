@@ -19,3 +19,10 @@ D:\Visual Studio\DoAnQuanLyXeMay\DTO\obj\Debug\DTO.csproj.AssemblyReference.cach
 D:\Visual Studio\DoAnQuanLyXeMay\DTO\obj\Debug\DTO.csproj.CoreCompileInputs.cache
 D:\Visual Studio\DoAnQuanLyXeMay\DTO\obj\Debug\DTO.dll
 D:\Visual Studio\DoAnQuanLyXeMay\DTO\obj\Debug\DTO.pdb
+D:\HitHub\ayoo\DoAnQuanLyXeMay\DTO\bin\Debug\DTO.dll.config
+D:\HitHub\ayoo\DoAnQuanLyXeMay\DTO\bin\Debug\DTO.dll
+D:\HitHub\ayoo\DoAnQuanLyXeMay\DTO\bin\Debug\DTO.pdb
+D:\HitHub\ayoo\DoAnQuanLyXeMay\DTO\obj\Debug\DTO.csproj.AssemblyReference.cache
+D:\HitHub\ayoo\DoAnQuanLyXeMay\DTO\obj\Debug\DTO.csproj.CoreCompileInputs.cache
+D:\HitHub\ayoo\DoAnQuanLyXeMay\DTO\obj\Debug\DTO.dll
+D:\HitHub\ayoo\DoAnQuanLyXeMay\DTO\obj\Debug\DTO.pdb

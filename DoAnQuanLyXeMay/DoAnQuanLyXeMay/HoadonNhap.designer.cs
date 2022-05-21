@@ -33,11 +33,6 @@ namespace DoAnQuanLyXeMay
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(HoadonNhap));
             this.tbL_hdN = new System.Windows.Forms.TableLayoutPanel();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.cl_mhd = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.cl_masp = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.cl_manv = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.cl_soluong = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.cl_nb = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ctx_hdnhap = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.btn_themhdn = new System.Windows.Forms.ToolStripMenuItem();
             this.btn_xoahdn = new System.Windows.Forms.ToolStripMenuItem();
@@ -53,11 +48,11 @@ namespace DoAnQuanLyXeMay
             this.label7 = new System.Windows.Forms.Label();
             this.txt_manv = new System.Windows.Forms.TextBox();
             this.txt_soluong = new System.Windows.Forms.TextBox();
-            this.txt_mahd = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.txt_mahd = new System.Windows.Forms.TextBox();
             this.tbL_hdN.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.ctx_hdnhap.SuspendLayout();
@@ -89,12 +84,6 @@ namespace DoAnQuanLyXeMay
             this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.ActiveCaption;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.cl_mhd,
-            this.cl_masp,
-            this.cl_manv,
-            this.cl_soluong,
-            this.cl_nb});
             this.dataGridView1.ContextMenuStrip = this.ctx_hdnhap;
             this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataGridView1.Location = new System.Drawing.Point(3, 351);
@@ -105,41 +94,6 @@ namespace DoAnQuanLyXeMay
             this.dataGridView1.TabIndex = 4;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             this.dataGridView1.SelectionChanged += new System.EventHandler(this.dataGridView1_SelectionChanged);
-            // 
-            // cl_mhd
-            // 
-            this.cl_mhd.DataPropertyName = "MAHD";
-            this.cl_mhd.HeaderText = "Mã Hóa Đơn";
-            this.cl_mhd.Name = "cl_mhd";
-            this.cl_mhd.ReadOnly = true;
-            // 
-            // cl_masp
-            // 
-            this.cl_masp.DataPropertyName = "MASP";
-            this.cl_masp.HeaderText = "Mã Sản Phẩm";
-            this.cl_masp.Name = "cl_masp";
-            this.cl_masp.ReadOnly = true;
-            // 
-            // cl_manv
-            // 
-            this.cl_manv.DataPropertyName = "MANV";
-            this.cl_manv.HeaderText = "Mã Nhân Viên";
-            this.cl_manv.Name = "cl_manv";
-            this.cl_manv.ReadOnly = true;
-            // 
-            // cl_soluong
-            // 
-            this.cl_soluong.DataPropertyName = "SL";
-            this.cl_soluong.HeaderText = "Số lượng";
-            this.cl_soluong.Name = "cl_soluong";
-            this.cl_soluong.ReadOnly = true;
-            // 
-            // cl_nb
-            // 
-            this.cl_nb.DataPropertyName = "NGAYBAN";
-            this.cl_nb.HeaderText = "Ngày Bán";
-            this.cl_nb.Name = "cl_nb";
-            this.cl_nb.ReadOnly = true;
             // 
             // ctx_hdnhap
             // 
@@ -201,6 +155,7 @@ namespace DoAnQuanLyXeMay
             // groupBox1
             // 
             this.groupBox1.BackColor = System.Drawing.Color.PeachPuff;
+            this.groupBox1.Controls.Add(this.txt_mahd);
             this.groupBox1.Controls.Add(this.txt_gia);
             this.groupBox1.Controls.Add(this.label6);
             this.groupBox1.Controls.Add(this.txt_masp);
@@ -209,7 +164,6 @@ namespace DoAnQuanLyXeMay
             this.groupBox1.Controls.Add(this.label7);
             this.groupBox1.Controls.Add(this.txt_manv);
             this.groupBox1.Controls.Add(this.txt_soluong);
-            this.groupBox1.Controls.Add(this.txt_mahd);
             this.groupBox1.Controls.Add(this.label5);
             this.groupBox1.Controls.Add(this.label4);
             this.groupBox1.Controls.Add(this.label3);
@@ -301,14 +255,6 @@ namespace DoAnQuanLyXeMay
             this.txt_soluong.Size = new System.Drawing.Size(181, 29);
             this.txt_soluong.TabIndex = 44;
             // 
-            // txt_mahd
-            // 
-            this.txt_mahd.Dock = System.Windows.Forms.DockStyle.Top;
-            this.txt_mahd.Location = new System.Drawing.Point(3, 25);
-            this.txt_mahd.Name = "txt_mahd";
-            this.txt_mahd.Size = new System.Drawing.Size(844, 29);
-            this.txt_mahd.TabIndex = 43;
-            // 
             // label5
             // 
             this.label5.AutoSize = true;
@@ -357,6 +303,13 @@ namespace DoAnQuanLyXeMay
             this.label2.Text = "Mã Hóa Đơn";
             this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
+            // txt_mahd
+            // 
+            this.txt_mahd.Location = new System.Drawing.Point(183, 40);
+            this.txt_mahd.Name = "txt_mahd";
+            this.txt_mahd.Size = new System.Drawing.Size(181, 29);
+            this.txt_mahd.TabIndex = 54;
+            // 
             // HoadonNhap
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -385,7 +338,6 @@ namespace DoAnQuanLyXeMay
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.TextBox txt_manv;
         private System.Windows.Forms.TextBox txt_soluong;
-        private System.Windows.Forms.TextBox txt_mahd;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
@@ -396,14 +348,10 @@ namespace DoAnQuanLyXeMay
         private System.Windows.Forms.ToolStripMenuItem btn_xoahdn;
         private System.Windows.Forms.ToolStripMenuItem btn_suahdn;
         private System.Windows.Forms.ToolStripMenuItem btn_xcthdn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn cl_mhd;
-        private System.Windows.Forms.DataGridViewTextBoxColumn cl_masp;
-        private System.Windows.Forms.DataGridViewTextBoxColumn cl_manv;
-        private System.Windows.Forms.DataGridViewTextBoxColumn cl_soluong;
-        private System.Windows.Forms.DataGridViewTextBoxColumn cl_nb;
         private System.Windows.Forms.Button btn_them;
         private System.Windows.Forms.TextBox txt_masp;
         private System.Windows.Forms.TextBox txt_gia;
         private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.TextBox txt_mahd;
     }
 }

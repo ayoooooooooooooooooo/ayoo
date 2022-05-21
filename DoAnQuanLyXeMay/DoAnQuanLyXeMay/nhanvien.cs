@@ -21,11 +21,10 @@ namespace DoAnQuanLyXeMay
 
         private void xephankhoilon_Load(object sender, EventArgs e)
         {
-            //if (flag == false)
-            //    btn_nv.Enabled = false;
-            //foreach(tennv a in  xldl.loadlsttennv() )
-            //    if(a.Manv==tennv)
-            //label6.Text ="Hãy làm việc thật tốt nhé "+ a.Tennhanvien;
+            if (flag == false)
+                btn_nv.Enabled = false;
+
+                    label6.Text = "Hãy làm việc thật tốt nhé " + bllnv.BLLlayTenNV(tennv);
         }
 
         string tennv = "";
@@ -72,10 +71,10 @@ namespace DoAnQuanLyXeMay
 
         private void btn_dangxuat_Click(object sender, EventArgs e)
         {
-            //this.Close();
-            //formdangnhapnv a = new formdangnhapnv();
-            //a.Show();
-            //a.MdiParent = this.MdiParent;
+            this.Close();
+            DangNhapNV a = new DangNhapNV();
+            a.Show();
+            a.MdiParent = this.MdiParent;
         }
        
         

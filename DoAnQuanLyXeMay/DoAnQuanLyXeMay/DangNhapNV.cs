@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using BLL;
+using DTO;
 namespace DoAnQuanLyXeMay
 {
     public partial class DangNhapNV : Form
@@ -22,8 +23,23 @@ namespace DoAnQuanLyXeMay
         {
             if (bllnv.dangNhapNV(txt_tknv.Text, txt_mknv.Text))
             {
-                nhanvien a = new nhanvien();
-                a.Show();
+                bool n=true;    
+                NHANVIEN nv= bllnv.BLLLay1NV(txt_tknv.Text,txt_mknv.Text);
+                if (nv.PHANLOAI.Equals("ql"))
+                {
+                   
+                    nhanvien a = new nhanvien(true, nv.MANV) ;
+                    a.Show();
+                    this.Close();
+
+                }
+                else
+                {
+                    nhanvien a = new nhanvien(false, nv.MANV);
+                    a.Show();
+                    this.Close();
+                }    
+
             }
             else
             {
