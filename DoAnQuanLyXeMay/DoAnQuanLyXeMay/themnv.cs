@@ -116,10 +116,7 @@ namespace DoAnQuanLyXeMay
         private void txt_cmnd_KeyPress(object sender, KeyPressEventArgs e)
         {
 
-            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar) && (e.KeyChar != '.'))
-            {
-                e.Handled = true;
-            }
+           
         }
         BLLNHhanVien bllnv = new BLLNHhanVien();
        
@@ -142,6 +139,11 @@ namespace DoAnQuanLyXeMay
                 MessageBox.Show("Them thanh cong");
             else
                 MessageBox.Show("them that bai");
+        }
+
+        private void txt_cmnd_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

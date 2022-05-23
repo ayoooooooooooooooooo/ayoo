@@ -35,10 +35,8 @@
             this.txt_tennhanvien = new System.Windows.Forms.TextBox();
             this.txt_email = new System.Windows.Forms.TextBox();
             this.txt_diachi = new System.Windows.Forms.TextBox();
-            this.txt_sdt = new System.Windows.Forms.TextBox();
             this.txt_mk = new System.Windows.Forms.TextBox();
             this.txt_tk = new System.Windows.Forms.TextBox();
-            this.txt_cmnd = new System.Windows.Forms.TextBox();
             this.txt_ngaysinh = new System.Windows.Forms.DateTimePicker();
             this.txt_ngayvl = new System.Windows.Forms.DateTimePicker();
             this.label3 = new System.Windows.Forms.Label();
@@ -55,6 +53,8 @@
             this.cbo_gt = new System.Windows.Forms.ComboBox();
             this.cbo_pl = new System.Windows.Forms.ComboBox();
             this.btn_them = new ThietkeControl.ButtonDN();
+            this.txt_sdt = new ThietkeControl.txtNhapso();
+            this.txt_cmnd = new ThietkeControl.txtNhapso();
             this.SuspendLayout();
             // 
             // label1
@@ -117,16 +117,6 @@
             this.txt_diachi.TabIndex = 6;
             this.txt_diachi.TextChanged += new System.EventHandler(this.textBox4_TextChanged);
             // 
-            // txt_sdt
-            // 
-            this.txt_sdt.Location = new System.Drawing.Point(169, 398);
-            this.txt_sdt.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
-            this.txt_sdt.Name = "txt_sdt";
-            this.txt_sdt.Size = new System.Drawing.Size(225, 29);
-            this.txt_sdt.TabIndex = 8;
-            this.txt_sdt.TextChanged += new System.EventHandler(this.textBox6_TextChanged);
-            this.txt_sdt.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_sdt_KeyPress);
-            // 
             // txt_mk
             // 
             this.txt_mk.Location = new System.Drawing.Point(590, 248);
@@ -144,15 +134,6 @@
             this.txt_tk.Name = "txt_tk";
             this.txt_tk.Size = new System.Drawing.Size(225, 29);
             this.txt_tk.TabIndex = 10;
-            // 
-            // txt_cmnd
-            // 
-            this.txt_cmnd.Location = new System.Drawing.Point(590, 398);
-            this.txt_cmnd.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
-            this.txt_cmnd.Name = "txt_cmnd";
-            this.txt_cmnd.Size = new System.Drawing.Size(225, 29);
-            this.txt_cmnd.TabIndex = 12;
-            this.txt_cmnd.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_cmnd_KeyPress);
             // 
             // txt_ngaysinh
             // 
@@ -355,12 +336,28 @@
             this.btn_them.UseVisualStyleBackColor = false;
             this.btn_them.Click += new System.EventHandler(this.buttonDN1_Click);
             // 
+            // txt_sdt
+            // 
+            this.txt_sdt.Location = new System.Drawing.Point(169, 401);
+            this.txt_sdt.Name = "txt_sdt";
+            this.txt_sdt.Size = new System.Drawing.Size(225, 29);
+            this.txt_sdt.TabIndex = 29;
+            // 
+            // txt_cmnd
+            // 
+            this.txt_cmnd.Location = new System.Drawing.Point(590, 396);
+            this.txt_cmnd.Name = "txt_cmnd";
+            this.txt_cmnd.Size = new System.Drawing.Size(225, 29);
+            this.txt_cmnd.TabIndex = 30;
+            // 
             // themnv
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 24F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(935, 674);
+            this.Controls.Add(this.txt_cmnd);
+            this.Controls.Add(this.txt_sdt);
             this.Controls.Add(this.btn_them);
             this.Controls.Add(this.cbo_pl);
             this.Controls.Add(this.cbo_gt);
@@ -377,10 +374,8 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.txt_ngayvl);
             this.Controls.Add(this.txt_ngaysinh);
-            this.Controls.Add(this.txt_cmnd);
             this.Controls.Add(this.txt_tk);
             this.Controls.Add(this.txt_mk);
-            this.Controls.Add(this.txt_sdt);
             this.Controls.Add(this.txt_diachi);
             this.Controls.Add(this.txt_email);
             this.Controls.Add(this.txt_tennhanvien);
@@ -405,10 +400,8 @@
         private System.Windows.Forms.TextBox txt_tennhanvien;
         private System.Windows.Forms.TextBox txt_email;
         private System.Windows.Forms.TextBox txt_diachi;
-        private System.Windows.Forms.TextBox txt_sdt;
         private System.Windows.Forms.TextBox txt_mk;
         private System.Windows.Forms.TextBox txt_tk;
-        private System.Windows.Forms.TextBox txt_cmnd;
         private System.Windows.Forms.DateTimePicker txt_ngaysinh;
         private System.Windows.Forms.DateTimePicker txt_ngayvl;
         private System.Windows.Forms.Label label3;
@@ -425,5 +418,7 @@
         private System.Windows.Forms.ComboBox cbo_gt;
         private System.Windows.Forms.ComboBox cbo_pl;
         private ThietkeControl.ButtonDN btn_them;
+        private ThietkeControl.txtNhapso txt_sdt;
+        private ThietkeControl.txtNhapso txt_cmnd;
     }
 }
