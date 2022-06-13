@@ -34,6 +34,7 @@ namespace DOAN
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.btn_inhd = new System.Windows.Forms.Button();
             this.txt_gia = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.btn_luu = new System.Windows.Forms.Button();
@@ -58,7 +59,6 @@ namespace DOAN
             this.btn_xoahdx = new System.Windows.Forms.ToolStripMenuItem();
             this.btn_suahdx = new System.Windows.Forms.ToolStripMenuItem();
             this.btn_xcthdx = new System.Windows.Forms.ToolStripMenuItem();
-            this.button1 = new System.Windows.Forms.Button();
             this.tableLayoutPanel1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -100,7 +100,7 @@ namespace DOAN
             // groupBox1
             // 
             this.groupBox1.BackColor = System.Drawing.SystemColors.GrayText;
-            this.groupBox1.Controls.Add(this.button1);
+            this.groupBox1.Controls.Add(this.btn_inhd);
             this.groupBox1.Controls.Add(this.txt_gia);
             this.groupBox1.Controls.Add(this.label6);
             this.groupBox1.Controls.Add(this.btn_luu);
@@ -123,6 +123,18 @@ namespace DOAN
             this.groupBox1.TabIndex = 1;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Hóa đơn";
+            // 
+            // btn_inhd
+            // 
+            this.btn_inhd.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_inhd.ForeColor = System.Drawing.Color.Maroon;
+            this.btn_inhd.Location = new System.Drawing.Point(554, 241);
+            this.btn_inhd.Name = "btn_inhd";
+            this.btn_inhd.Size = new System.Drawing.Size(162, 38);
+            this.btn_inhd.TabIndex = 62;
+            this.btn_inhd.Text = "IN HÓA ĐƠN";
+            this.btn_inhd.UseVisualStyleBackColor = true;
+            this.btn_inhd.Click += new System.EventHandler(this.button1_Click);
             // 
             // txt_gia
             // 
@@ -350,18 +362,6 @@ namespace DOAN
             this.btn_xcthdx.Size = new System.Drawing.Size(152, 22);
             this.btn_xcthdx.Text = "Xem chi tiết";
             // 
-            // button1
-            // 
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.Maroon;
-            this.button1.Location = new System.Drawing.Point(554, 241);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(162, 38);
-            this.button1.TabIndex = 62;
-            this.button1.Text = "IN HÓA ĐƠN";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
             // HoaDonXuat
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -410,6 +410,6 @@ namespace DOAN
         private System.Windows.Forms.Button btn_luu;
         private System.Windows.Forms.TextBox txt_gia;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btn_inhd;
     }
 }
