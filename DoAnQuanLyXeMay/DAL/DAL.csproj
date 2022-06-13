@@ -43,6 +43,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Class1.cs" />
+    <Compile Include="DALCTHDNHAP.cs" />
+    <Compile Include="DALCTHDXUAT.cs" />
     <Compile Include="DALHDNhap.cs" />
     <Compile Include="DALHDXuat.cs" />
     <Compile Include="DALKhachHang.cs" />

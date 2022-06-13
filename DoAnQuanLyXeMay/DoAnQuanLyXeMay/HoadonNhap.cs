@@ -81,7 +81,7 @@ namespace DoAnQuanLyXeMay
         private void HoadonNhap_Load(object sender, EventArgs e)
         {
             dataGridView1.DataSource = bLLHDNhap.dsHDNhap();
-      
+            dataGridView1.Columns[3].Visible = false;
             txt_manv.Enabled = false;
             btn_them.Enabled = false;
         }
@@ -149,7 +149,8 @@ namespace DoAnQuanLyXeMay
 
         private void btn_xcthdn_Click(object sender, EventArgs e)
         {
-
+            chitiethoadonxuat  a= new chitiethoadonxuat(dataGridView1.CurrentRow.Cells[0].Value.ToString());
+            a.Show();
         }
     }
 }

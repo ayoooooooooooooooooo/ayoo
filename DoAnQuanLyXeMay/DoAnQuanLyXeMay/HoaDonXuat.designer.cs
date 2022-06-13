@@ -51,7 +51,6 @@ namespace DoAnQuanLyXeMay
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.cl_mhd = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.cl_makh = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.cl_masp = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.cl_manv = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.cl_soluong = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ctx_hdxuat = new System.Windows.Forms.ContextMenuStrip(this.components);
@@ -274,7 +273,6 @@ namespace DoAnQuanLyXeMay
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.cl_mhd,
             this.cl_makh,
-            this.cl_masp,
             this.cl_manv,
             this.cl_soluong});
             this.dataGridView1.ContextMenuStrip = this.ctx_hdxuat;
@@ -302,13 +300,6 @@ namespace DoAnQuanLyXeMay
             this.cl_makh.Name = "cl_makh";
             this.cl_makh.ReadOnly = true;
             // 
-            // cl_masp
-            // 
-            this.cl_masp.DataPropertyName = "MASP";
-            this.cl_masp.HeaderText = "Mã Sản Phẩm";
-            this.cl_masp.Name = "cl_masp";
-            this.cl_masp.ReadOnly = true;
-            // 
             // cl_manv
             // 
             this.cl_manv.DataPropertyName = "MANV";
@@ -332,14 +323,14 @@ namespace DoAnQuanLyXeMay
             this.btn_suahdx,
             this.btn_xcthdx});
             this.ctx_hdxuat.Name = "ctx_hdnhap";
-            this.ctx_hdxuat.Size = new System.Drawing.Size(153, 92);
+            this.ctx_hdxuat.Size = new System.Drawing.Size(181, 114);
             this.ctx_hdxuat.Opening += new System.ComponentModel.CancelEventHandler(this.ctx_hdxuat_Opening);
             // 
             // btn_themhdx
             // 
             this.btn_themhdx.Image = ((System.Drawing.Image)(resources.GetObject("btn_themhdx.Image")));
             this.btn_themhdx.Name = "btn_themhdx";
-            this.btn_themhdx.Size = new System.Drawing.Size(152, 22);
+            this.btn_themhdx.Size = new System.Drawing.Size(180, 22);
             this.btn_themhdx.Text = "Thêm";
             this.btn_themhdx.Click += new System.EventHandler(this.btn_themhdx_Click);
             // 
@@ -347,7 +338,7 @@ namespace DoAnQuanLyXeMay
             // 
             this.btn_xoahdx.Image = ((System.Drawing.Image)(resources.GetObject("btn_xoahdx.Image")));
             this.btn_xoahdx.Name = "btn_xoahdx";
-            this.btn_xoahdx.Size = new System.Drawing.Size(152, 22);
+            this.btn_xoahdx.Size = new System.Drawing.Size(180, 22);
             this.btn_xoahdx.Text = "Xóa";
             this.btn_xoahdx.Click += new System.EventHandler(this.btn_xoahdx_Click);
             // 
@@ -355,7 +346,7 @@ namespace DoAnQuanLyXeMay
             // 
             this.btn_suahdx.Image = ((System.Drawing.Image)(resources.GetObject("btn_suahdx.Image")));
             this.btn_suahdx.Name = "btn_suahdx";
-            this.btn_suahdx.Size = new System.Drawing.Size(152, 22);
+            this.btn_suahdx.Size = new System.Drawing.Size(180, 22);
             this.btn_suahdx.Text = "Sửa";
             this.btn_suahdx.Click += new System.EventHandler(this.btn_suahdx_Click);
             // 
@@ -363,8 +354,9 @@ namespace DoAnQuanLyXeMay
             // 
             this.btn_xcthdx.Image = ((System.Drawing.Image)(resources.GetObject("btn_xcthdx.Image")));
             this.btn_xcthdx.Name = "btn_xcthdx";
-            this.btn_xcthdx.Size = new System.Drawing.Size(152, 22);
+            this.btn_xcthdx.Size = new System.Drawing.Size(180, 22);
             this.btn_xcthdx.Text = "Xem chi tiết";
+            this.btn_xcthdx.Click += new System.EventHandler(this.btn_xcthdx_Click);
             // 
             // HoaDonXuat
             // 
@@ -412,7 +404,6 @@ namespace DoAnQuanLyXeMay
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.DataGridViewTextBoxColumn cl_mhd;
         private System.Windows.Forms.DataGridViewTextBoxColumn cl_makh;
-        private System.Windows.Forms.DataGridViewTextBoxColumn cl_masp;
         private System.Windows.Forms.DataGridViewTextBoxColumn cl_manv;
         private System.Windows.Forms.DataGridViewTextBoxColumn cl_soluong;
     }

@@ -16,5 +16,75 @@ namespace BLL
         {
             return daHDXuat.dsHDXuat();
         }
+        DALCTHDNHAP dalcthdnhap = new DALCTHDNHAP();
+        DALCTHDXUAT dalcthdxuat = new DALCTHDXUAT();
+        public List<HOADONXUAT> dsHDXuattheongay(string ngay)
+        {
+            return daHDXuat.dsHDXuattheongay(ngay);
+        }
+        public double tinhdoanhthu(DateTime ngay)
+        {
+            double kq = 0;
+            foreach (HOADONXUAT hdx in dsHDXuat())
+            {
+                DateTime ngayhdx = DateTime.Parse(hdx.NGAYBAN.ToString());
+                if (ngayhdx.ToString("dd/MM/yyyy").Equals(ngay.ToString("dd/MM/yyyy")))
+                {
+                    foreach (CHITIETHDXUAT ctx in dalcthdxuat.lsthdx())
+                    {
+                        if (ctx.MAHD.Equals(hdx.MAHD))
+                        {
+
+                            kq += double.Parse(ctx.THANHTIEN.ToString());
+                        }
+                    }
+                }
+            }
+            return kq;
+        }
+        public List<kho> tinhkho()
+        {
+            List<kho> lstk = new List<kho>();
+            List<CHITIETHDNHAP> lsthdnhap = dalcthdnhap.lsthdn();
+            List<CHITIETHDXUAT> lsthdxuat = dalcthdxuat.lsthdx();
+            foreach (CHITIETHDNHAP cHITIETHDNHAP in lsthdnhap)
+            {
+                if (lstk.Count != 0)
+                {
+                    foreach (kho k in lstk)
+                    {
+                        if (k.Masp.Equals(cHITIETHDNHAP.MASP))
+                        {
+                            k.Soluong = (int)(k.Soluong + cHITIETHDNHAP.SL);
+                            break;
+                        }
+                        else
+                        {
+                            kho a = new kho(cHITIETHDNHAP.MASP, (int)cHITIETHDNHAP.SL);
+                            lstk.Add(a);
+                            break;
+                        }
+                    }
+                }
+                else
+                {
+                    kho k1123 = new kho(cHITIETHDNHAP.MASP, (int)cHITIETHDNHAP.SL);
+                    lstk.Add(k1123);
+                }
+            }
+            foreach (CHITIETHDXUAT cHITIETHDXUAT in lsthdxuat)
+            {
+                foreach (kho k in lstk)
+                {
+                    if (k.Masp.Equals(cHITIETHDXUAT.MASP))
+                    {
+                        k.Soluong = (int)(k.Soluong - cHITIETHDXUAT.SL);
+                        break;
+                    }
+
+                }
+            }
+            return lstk;
+        }
     }
 }

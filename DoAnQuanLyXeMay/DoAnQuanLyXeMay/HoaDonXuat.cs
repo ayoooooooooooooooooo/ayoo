@@ -17,7 +17,7 @@ namespace DoAnQuanLyXeMay
         {
             InitializeComponent();
         }
- BLLHDXuat bLLHDXuat=new BLLHDXuat();
+        BLLHDXuat bLLHDXuat=new BLLHDXuat();
         private void HoaDonXuat_Load(object sender, EventArgs e)
         {
             dataGridView1.DataSource = bLLHDXuat.dsHDXuat();
@@ -25,30 +25,16 @@ namespace DoAnQuanLyXeMay
             txt_manv.Enabled = false;
             btn_luu.Enabled = false;
         }
-        void Databingding(DataTable pDT)
-        {
-            txt_mahd.DataBindings.Clear();
-            txt_masp.DataBindings.Clear();
-            txt_makh.DataBindings.Clear();
-            txt_manv.DataBindings.Clear();
-            dt_ngayban.DataBindings.Clear();
-
-            txt_masp.DataBindings.Add("Text", pDT, "MASP");
-            txt_mahd.DataBindings.Add("Text", pDT, "MAHD");
-            txt_makh.DataBindings.Add("Text", pDT, "MAKH");
-            txt_manv.DataBindings.Add("Text", pDT, "MANV");
-            dt_ngayban.DataBindings.Add("Text", pDT, "NGAYBAN");
-
-        }
-        string manv,mkh;
-         public HoaDonXuat(string manhanvien):this()
+      
+        string manv="";
+        public HoaDonXuat(string manhanvien) : this()
         {
             manv = manhanvien;
 
         }
-      
 
-         private void btn_xoahdx_Click(object sender, EventArgs e)
+
+        private void btn_xoahdx_Click(object sender, EventArgs e)
          {
              //xldl.loadhdx();
              //if (xldl.xoahdx(dataGridView1.CurrentRow.Cells[1].Value.ToString()))
@@ -151,6 +137,11 @@ namespace DoAnQuanLyXeMay
          }
 
         private void groupBox1_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btn_xcthdx_Click(object sender, EventArgs e)
         {
 
         }

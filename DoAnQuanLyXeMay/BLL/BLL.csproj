@@ -41,6 +41,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BLLCTHDNhap.cs" />
+    <Compile Include="BLLCTHDXuat.cs" />
     <Compile Include="BLLHDNhap.cs" />
     <Compile Include="BLLHDXuat.cs" />
     <Compile Include="BLLKhachHang.cs" />

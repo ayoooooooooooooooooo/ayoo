@@ -7,7 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+using BLL;
+using System.Globalization;
 namespace DoAnQuanLyXeMay
 {
     public partial class formkho : Form
@@ -16,18 +17,11 @@ namespace DoAnQuanLyXeMay
         {
             InitializeComponent();
         }
-
+        BLLHDXuat bllhdx= new BLLHDXuat();
         private void formkho_Load(object sender, EventArgs e)
         {
-            
-            //List<kho> lstkhoban = xldl.loadkhoban();
-            //List<kho> lstkhonhap = xldl.loadkho();
-            //xldl.tinhxeconlai(lstkhoban,lstkhonhap);
-           
-            //foreach (kho a in lstkhonhap)
-            //{
-            //    dataGridView1.Rows.Add(a.Masp, a.Soluong);
-            //}
+
+            dataGridView1.DataSource = bllhdx.tinhkho();
             
          }
 
@@ -53,12 +47,22 @@ namespace DoAnQuanLyXeMay
 
         private void button1_Click(object sender, EventArgs e)
         {
-         
+            txt_doanhthu.Text = String.Format("{0:0,0 vnđ}", bllhdx.tinhdoanhthu(txt_ngay.Value));
         }
 
         private void label3_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void txt_doanhthu_TextChanged(object sender, EventArgs e)
+        {
+           
         }
     }
 }

@@ -40,6 +40,7 @@ namespace DoAnQuanLyXeMay
             this.btn_xcthdn = new System.Windows.Forms.ToolStripMenuItem();
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.txt_mahd = new System.Windows.Forms.TextBox();
             this.txt_gia = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.txt_masp = new System.Windows.Forms.TextBox();
@@ -52,7 +53,9 @@ namespace DoAnQuanLyXeMay
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.txt_mahd = new System.Windows.Forms.TextBox();
+            this.MAHD = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.MANVa = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tbL_hdN.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.ctx_hdnhap.SuspendLayout();
@@ -84,6 +87,10 @@ namespace DoAnQuanLyXeMay
             this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.ActiveCaption;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.MAHD,
+            this.MANVa,
+            this.Column1});
             this.dataGridView1.ContextMenuStrip = this.ctx_hdnhap;
             this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataGridView1.Location = new System.Drawing.Point(3, 351);
@@ -178,6 +185,13 @@ namespace DoAnQuanLyXeMay
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Hóa đơn";
             this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
+            // 
+            // txt_mahd
+            // 
+            this.txt_mahd.Location = new System.Drawing.Point(183, 40);
+            this.txt_mahd.Name = "txt_mahd";
+            this.txt_mahd.Size = new System.Drawing.Size(181, 29);
+            this.txt_mahd.TabIndex = 54;
             // 
             // txt_gia
             // 
@@ -303,12 +317,26 @@ namespace DoAnQuanLyXeMay
             this.label2.Text = "Mã Hóa Đơn";
             this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
-            // txt_mahd
+            // MAHD
             // 
-            this.txt_mahd.Location = new System.Drawing.Point(183, 40);
-            this.txt_mahd.Name = "txt_mahd";
-            this.txt_mahd.Size = new System.Drawing.Size(181, 29);
-            this.txt_mahd.TabIndex = 54;
+            this.MAHD.DataPropertyName = "MAHD";
+            this.MAHD.HeaderText = "Mã hóa đơn";
+            this.MAHD.Name = "MAHD";
+            this.MAHD.ReadOnly = true;
+            // 
+            // MANVa
+            // 
+            this.MANVa.DataPropertyName = "MANV";
+            this.MANVa.HeaderText = "Mã nhân viên";
+            this.MANVa.Name = "MANVa";
+            this.MANVa.ReadOnly = true;
+            // 
+            // Column1
+            // 
+            this.Column1.DataPropertyName = "NGAYNHAP";
+            this.Column1.HeaderText = "Ngày nhập";
+            this.Column1.Name = "Column1";
+            this.Column1.ReadOnly = true;
             // 
             // HoadonNhap
             // 
@@ -353,5 +381,8 @@ namespace DoAnQuanLyXeMay
         private System.Windows.Forms.TextBox txt_gia;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.TextBox txt_mahd;
+        private System.Windows.Forms.DataGridViewTextBoxColumn MAHD;
+        private System.Windows.Forms.DataGridViewTextBoxColumn MANVa;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
     }
 }
