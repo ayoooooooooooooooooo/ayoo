@@ -31,6 +31,9 @@ namespace DoAnQuanLyXeMay
 
         private void chitiethoadon_Load(object sender, EventArgs e)
         {
+            dataGridView1.DataSource = bllctx.lstcthdxuat(mahd);
+            dataGridView1.Columns[6].Visible = false;
+            dataGridView1.Columns[7].Visible = false;
             if (mahd.Substring(0, 3).Equals("HDX"))
                 dataGridView1.DataSource = bllctx.lstcthdxuat(mahd);
             else
@@ -38,6 +41,11 @@ namespace DoAnQuanLyXeMay
         }
 
         private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btn_themhdx_Click(object sender, EventArgs e)
         {
 
         }

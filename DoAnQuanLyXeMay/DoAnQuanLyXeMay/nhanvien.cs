@@ -92,9 +92,9 @@ namespace DoAnQuanLyXeMay
 
         private void btn_khachhang_Click(object sender, EventArgs e)
         {
-            //KhachHang a = new KhachHang();
-            //a.Show();
-            //a.MdiParent = this.MdiParent;
+            KhachHang a = new KhachHang();
+            a.Show();
+            a.MdiParent = this.MdiParent;
         }
 
         private void btn_thongtin_Click(object sender, EventArgs e)

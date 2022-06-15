@@ -97,7 +97,7 @@ namespace DoAnQuanLyXeMay
         {
             txt_manv.Enabled = false;
         }
-        string mnv; 
+        string mnv=""; 
             bool loai=true;
         public thongtinnv(string manv):this()
         {

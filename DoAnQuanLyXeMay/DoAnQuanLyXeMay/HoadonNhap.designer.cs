@@ -33,6 +33,9 @@ namespace DoAnQuanLyXeMay
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(HoadonNhap));
             this.tbL_hdN = new System.Windows.Forms.TableLayoutPanel();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.MAHD = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.MANVa = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ctx_hdnhap = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.btn_themhdn = new System.Windows.Forms.ToolStripMenuItem();
             this.btn_xoahdn = new System.Windows.Forms.ToolStripMenuItem();
@@ -41,21 +44,12 @@ namespace DoAnQuanLyXeMay
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.txt_mahd = new System.Windows.Forms.TextBox();
-            this.txt_gia = new System.Windows.Forms.TextBox();
-            this.label6 = new System.Windows.Forms.Label();
-            this.txt_masp = new System.Windows.Forms.TextBox();
             this.btn_them = new System.Windows.Forms.Button();
             this.dt_ngayban = new System.Windows.Forms.DateTimePicker();
-            this.label7 = new System.Windows.Forms.Label();
             this.txt_manv = new System.Windows.Forms.TextBox();
-            this.txt_soluong = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.MAHD = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.MANVa = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tbL_hdN.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.ctx_hdnhap.SuspendLayout();
@@ -102,6 +96,27 @@ namespace DoAnQuanLyXeMay
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             this.dataGridView1.SelectionChanged += new System.EventHandler(this.dataGridView1_SelectionChanged);
             // 
+            // MAHD
+            // 
+            this.MAHD.DataPropertyName = "MAHD";
+            this.MAHD.HeaderText = "Mã hóa đơn";
+            this.MAHD.Name = "MAHD";
+            this.MAHD.ReadOnly = true;
+            // 
+            // MANVa
+            // 
+            this.MANVa.DataPropertyName = "MANV";
+            this.MANVa.HeaderText = "Mã nhân viên";
+            this.MANVa.Name = "MANVa";
+            this.MANVa.ReadOnly = true;
+            // 
+            // Column1
+            // 
+            this.Column1.DataPropertyName = "NGAYNHAP";
+            this.Column1.HeaderText = "Ngày nhập";
+            this.Column1.Name = "Column1";
+            this.Column1.ReadOnly = true;
+            // 
             // ctx_hdnhap
             // 
             this.ctx_hdnhap.Font = new System.Drawing.Font("Showcard Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -111,21 +126,21 @@ namespace DoAnQuanLyXeMay
             this.btn_suahdn,
             this.btn_xcthdn});
             this.ctx_hdnhap.Name = "ctx_hdnhap";
-            this.ctx_hdnhap.Size = new System.Drawing.Size(153, 92);
+            this.ctx_hdnhap.Size = new System.Drawing.Size(181, 114);
             // 
             // btn_themhdn
             // 
             this.btn_themhdn.Image = ((System.Drawing.Image)(resources.GetObject("btn_themhdn.Image")));
             this.btn_themhdn.Name = "btn_themhdn";
-            this.btn_themhdn.Size = new System.Drawing.Size(152, 22);
+            this.btn_themhdn.Size = new System.Drawing.Size(180, 22);
             this.btn_themhdn.Text = "Thêm";
-            this.btn_themhdn.Click += new System.EventHandler(this.xóaToolStripMenuItem_Click);
+            this.btn_themhdn.Click += new System.EventHandler(this.button1_Click);
             // 
             // btn_xoahdn
             // 
             this.btn_xoahdn.Image = ((System.Drawing.Image)(resources.GetObject("btn_xoahdn.Image")));
             this.btn_xoahdn.Name = "btn_xoahdn";
-            this.btn_xoahdn.Size = new System.Drawing.Size(152, 22);
+            this.btn_xoahdn.Size = new System.Drawing.Size(180, 22);
             this.btn_xoahdn.Text = "Xóa";
             this.btn_xoahdn.Click += new System.EventHandler(this.btn_xoahdn_Click);
             // 
@@ -133,7 +148,7 @@ namespace DoAnQuanLyXeMay
             // 
             this.btn_suahdn.Image = ((System.Drawing.Image)(resources.GetObject("btn_suahdn.Image")));
             this.btn_suahdn.Name = "btn_suahdn";
-            this.btn_suahdn.Size = new System.Drawing.Size(152, 22);
+            this.btn_suahdn.Size = new System.Drawing.Size(180, 22);
             this.btn_suahdn.Text = "Sửa";
             this.btn_suahdn.Click += new System.EventHandler(this.btn_suahdn_Click);
             // 
@@ -141,7 +156,7 @@ namespace DoAnQuanLyXeMay
             // 
             this.btn_xcthdn.Image = ((System.Drawing.Image)(resources.GetObject("btn_xcthdn.Image")));
             this.btn_xcthdn.Name = "btn_xcthdn";
-            this.btn_xcthdn.Size = new System.Drawing.Size(152, 22);
+            this.btn_xcthdn.Size = new System.Drawing.Size(180, 22);
             this.btn_xcthdn.Text = "Xem chi tiết";
             this.btn_xcthdn.Click += new System.EventHandler(this.btn_xcthdn_Click);
             // 
@@ -163,17 +178,11 @@ namespace DoAnQuanLyXeMay
             // 
             this.groupBox1.BackColor = System.Drawing.Color.PeachPuff;
             this.groupBox1.Controls.Add(this.txt_mahd);
-            this.groupBox1.Controls.Add(this.txt_gia);
-            this.groupBox1.Controls.Add(this.label6);
-            this.groupBox1.Controls.Add(this.txt_masp);
             this.groupBox1.Controls.Add(this.btn_them);
             this.groupBox1.Controls.Add(this.dt_ngayban);
-            this.groupBox1.Controls.Add(this.label7);
             this.groupBox1.Controls.Add(this.txt_manv);
-            this.groupBox1.Controls.Add(this.txt_soluong);
             this.groupBox1.Controls.Add(this.label5);
             this.groupBox1.Controls.Add(this.label4);
-            this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -193,33 +202,6 @@ namespace DoAnQuanLyXeMay
             this.txt_mahd.Size = new System.Drawing.Size(181, 29);
             this.txt_mahd.TabIndex = 54;
             // 
-            // txt_gia
-            // 
-            this.txt_gia.Enabled = false;
-            this.txt_gia.Location = new System.Drawing.Point(383, 150);
-            this.txt_gia.Name = "txt_gia";
-            this.txt_gia.Size = new System.Drawing.Size(181, 29);
-            this.txt_gia.TabIndex = 53;
-            this.txt_gia.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.label6.Location = new System.Drawing.Point(250, 155);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(38, 24);
-            this.label6.TabIndex = 52;
-            this.label6.Text = "Giá";
-            // 
-            // txt_masp
-            // 
-            this.txt_masp.Location = new System.Drawing.Point(607, 40);
-            this.txt_masp.Name = "txt_masp";
-            this.txt_masp.Size = new System.Drawing.Size(181, 29);
-            this.txt_masp.TabIndex = 51;
-            // 
             // btn_them
             // 
             this.btn_them.BackColor = System.Drawing.Color.Yellow;
@@ -237,44 +219,25 @@ namespace DoAnQuanLyXeMay
             // 
             this.dt_ngayban.CalendarFont = new System.Drawing.Font("Microsoft YaHei", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dt_ngayban.CalendarForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.dt_ngayban.Location = new System.Drawing.Point(355, 196);
+            this.dt_ngayban.Location = new System.Drawing.Point(398, 194);
             this.dt_ngayban.Name = "dt_ngayban";
             this.dt_ngayban.Size = new System.Drawing.Size(238, 29);
             this.dt_ngayban.TabIndex = 49;
             this.dt_ngayban.Value = new System.DateTime(2021, 11, 10, 0, 0, 0, 0);
             // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.label7.Location = new System.Drawing.Point(458, 38);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(128, 24);
-            this.label7.TabIndex = 47;
-            this.label7.Text = "Mã Sản Phẩm";
-            this.label7.Click += new System.EventHandler(this.label7_Click);
-            // 
             // txt_manv
             // 
-            this.txt_manv.Location = new System.Drawing.Point(607, 107);
+            this.txt_manv.Location = new System.Drawing.Point(599, 42);
             this.txt_manv.Name = "txt_manv";
             this.txt_manv.Size = new System.Drawing.Size(181, 29);
             this.txt_manv.TabIndex = 46;
-            // 
-            // txt_soluong
-            // 
-            this.txt_soluong.Location = new System.Drawing.Point(183, 107);
-            this.txt_soluong.Name = "txt_soluong";
-            this.txt_soluong.Size = new System.Drawing.Size(181, 29);
-            this.txt_soluong.TabIndex = 44;
             // 
             // label5
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.label5.Location = new System.Drawing.Point(457, 110);
+            this.label5.Location = new System.Drawing.Point(445, 45);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(131, 24);
             this.label5.TabIndex = 42;
@@ -293,18 +256,6 @@ namespace DoAnQuanLyXeMay
             this.label4.Text = "Ngày bán";
             this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.label3.Location = new System.Drawing.Point(35, 107);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(92, 24);
-            this.label3.TabIndex = 40;
-            this.label3.Text = "Số Lượng";
-            this.label3.Click += new System.EventHandler(this.label3_Click);
-            // 
             // label2
             // 
             this.label2.AutoSize = true;
@@ -316,27 +267,6 @@ namespace DoAnQuanLyXeMay
             this.label2.TabIndex = 39;
             this.label2.Text = "Mã Hóa Đơn";
             this.label2.Click += new System.EventHandler(this.label2_Click);
-            // 
-            // MAHD
-            // 
-            this.MAHD.DataPropertyName = "MAHD";
-            this.MAHD.HeaderText = "Mã hóa đơn";
-            this.MAHD.Name = "MAHD";
-            this.MAHD.ReadOnly = true;
-            // 
-            // MANVa
-            // 
-            this.MANVa.DataPropertyName = "MANV";
-            this.MANVa.HeaderText = "Mã nhân viên";
-            this.MANVa.Name = "MANVa";
-            this.MANVa.ReadOnly = true;
-            // 
-            // Column1
-            // 
-            this.Column1.DataPropertyName = "NGAYNHAP";
-            this.Column1.HeaderText = "Ngày nhập";
-            this.Column1.Name = "Column1";
-            this.Column1.ReadOnly = true;
             // 
             // HoadonNhap
             // 
@@ -363,12 +293,9 @@ namespace DoAnQuanLyXeMay
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.Label label7;
         private System.Windows.Forms.TextBox txt_manv;
-        private System.Windows.Forms.TextBox txt_soluong;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.DateTimePicker dt_ngayban;
         private System.Windows.Forms.ContextMenuStrip ctx_hdnhap;
@@ -377,9 +304,6 @@ namespace DoAnQuanLyXeMay
         private System.Windows.Forms.ToolStripMenuItem btn_suahdn;
         private System.Windows.Forms.ToolStripMenuItem btn_xcthdn;
         private System.Windows.Forms.Button btn_them;
-        private System.Windows.Forms.TextBox txt_masp;
-        private System.Windows.Forms.TextBox txt_gia;
-        private System.Windows.Forms.Label label6;
         private System.Windows.Forms.TextBox txt_mahd;
         private System.Windows.Forms.DataGridViewTextBoxColumn MAHD;
         private System.Windows.Forms.DataGridViewTextBoxColumn MANVa;

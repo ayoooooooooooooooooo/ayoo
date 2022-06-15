@@ -25,6 +25,21 @@ namespace BLL
             }
             return lstxuattheoma;
         }
+        public bool xoahdn(string mahd)
+        {
+            return dalctxuat.xoacthdx(mahd);
+
+        }
+        public bool suahdn(CHITIETHDXUAT hdx)
+        {
+            return dalctxuat.suacthdx(hdx);
+
+        }
+        public bool themhdn(CHITIETHDXUAT hdx)
+        {
+            return dalctxuat.themcthdx(hdx);
+
+        }
 
     }
 }

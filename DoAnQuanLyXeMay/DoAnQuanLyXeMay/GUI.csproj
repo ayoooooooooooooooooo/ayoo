@@ -87,7 +87,12 @@
     <Compile Include="HoaDonXuat.designer.cs">
       <DependentUpon>HoaDonXuat.cs</DependentUpon>
     </Compile>
-    <Compile Include="kho.cs" />
+    <Compile Include="KhachHang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KhachHang.designer.cs">
+      <DependentUpon>KhachHang.cs</DependentUpon>
+    </Compile>
     <Compile Include="nhanvien.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -128,6 +133,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="HoaDonXuat.resx">
       <DependentUpon>HoaDonXuat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KhachHang.resx">
+      <DependentUpon>KhachHang.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="nhanvien.resx">
       <DependentUpon>nhanvien.cs</DependentUpon>
