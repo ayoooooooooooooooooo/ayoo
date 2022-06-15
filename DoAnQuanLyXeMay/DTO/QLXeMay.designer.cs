@@ -1066,7 +1066,14 @@ namespace DTO
 		{
 			get
 			{
-				return this._CHITIETHDXUAT.Entity;
+				try
+				{
+					return this._CHITIETHDXUAT.Entity;
+				}
+				catch (global::System.Exception)
+                {
+					return this._CHITIETHDXUAT.Entity; 
+                }				
 			}
 			set
 			{

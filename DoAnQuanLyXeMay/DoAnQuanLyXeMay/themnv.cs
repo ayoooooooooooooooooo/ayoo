@@ -136,9 +136,9 @@ namespace DoAnQuanLyXeMay
             nv.NGAYSINH = txt_ngaysinh.Value;
             nv.PHANLOAI = cbo_pl.Text;
             if (bllnv.BLLthemNV(nv))
-                MessageBox.Show("Them thanh cong");
+                MessageBox.Show("Thêm thành công");
             else
-                MessageBox.Show("them that bai");
+                MessageBox.Show("Thêm thất bại");
         }
 
         private void txt_cmnd_TextChanged(object sender, EventArgs e)

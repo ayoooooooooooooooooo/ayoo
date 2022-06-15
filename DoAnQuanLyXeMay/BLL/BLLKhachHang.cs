@@ -13,7 +13,7 @@ namespace BLL
 
         DALKhachHang dalkh = new DALKhachHang();
         public BLLKhachHang() { }
-        public List<KHACHHANG> dsNhanVien()
+        public List<KHACHHANG> dskhachhang()
         {
             return dalkh.dsKhachHang();
         }

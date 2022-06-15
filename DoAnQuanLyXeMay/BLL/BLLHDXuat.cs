@@ -86,5 +86,36 @@ namespace BLL
             }
             return lstk;
         }
+
+        public bool xoahdx(string mahd)
+        {
+            return daHDXuat.xoahdx(mahd);
+
+        }
+        public bool suahdx(HOADONXUAT hdx)
+        {
+            return daHDXuat.suahdx(hdx);
+
+        }
+        public bool themhdx(HOADONXUAT hdx)
+        {
+            return daHDXuat.themhdx(hdx);
+
+        }
+        public string mahdauto()
+        {
+            int kq=0;
+            string mahd="HDX";
+            foreach(HOADONXUAT hdx in dsHDXuat())
+            {
+                int mhdnow = int.Parse(hdx.MAHD.Substring(3));
+                if(kq<mhdnow||kq==mhdnow)
+                    kq=mhdnow+1;
+
+            }
+            return mahd + kq;
+
+        }
+
     }
 }
