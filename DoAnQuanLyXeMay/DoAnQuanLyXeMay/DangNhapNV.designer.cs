@@ -31,11 +31,11 @@ namespace DoAnQuanLyXeMay
         {
             this.label3 = new System.Windows.Forms.Label();
             this.txt_mknv = new System.Windows.Forms.TextBox();
-            this.btn_thoat = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.txt_tknv = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.btn_dnnv = new System.Windows.Forms.Button();
+            this.btn_dn = new ThietkeControl.ButtonDN();
+            this.btn_thoat = new ThietkeControl.ButtonDN();
             this.SuspendLayout();
             // 
             // label3
@@ -55,17 +55,6 @@ namespace DoAnQuanLyXeMay
             this.txt_mknv.Name = "txt_mknv";
             this.txt_mknv.Size = new System.Drawing.Size(194, 20);
             this.txt_mknv.TabIndex = 19;
-            // 
-            // btn_thoat
-            // 
-            this.btn_thoat.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_thoat.ForeColor = System.Drawing.Color.MediumVioletRed;
-            this.btn_thoat.Location = new System.Drawing.Point(270, 297);
-            this.btn_thoat.Name = "btn_thoat";
-            this.btn_thoat.Size = new System.Drawing.Size(94, 44);
-            this.btn_thoat.TabIndex = 18;
-            this.btn_thoat.Text = "Thoát";
-            this.btn_thoat.UseVisualStyleBackColor = true;
             // 
             // label2
             // 
@@ -96,30 +85,57 @@ namespace DoAnQuanLyXeMay
             this.label1.TabIndex = 15;
             this.label1.Text = "Tài Khoản";
             // 
-            // btn_dnnv
+            // btn_dn
             // 
-            this.btn_dnnv.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_dnnv.ForeColor = System.Drawing.Color.MediumVioletRed;
-            this.btn_dnnv.Location = new System.Drawing.Point(74, 297);
-            this.btn_dnnv.Name = "btn_dnnv";
-            this.btn_dnnv.Size = new System.Drawing.Size(125, 44);
-            this.btn_dnnv.TabIndex = 14;
-            this.btn_dnnv.Text = "Đăng Nhập";
-            this.btn_dnnv.UseVisualStyleBackColor = true;
-            this.btn_dnnv.Click += new System.EventHandler(this.btn_dnnv_Click);
+            this.btn_dn.BackColor = System.Drawing.Color.MediumSlateBlue;
+            this.btn_dn.BackgroundColor = System.Drawing.Color.MediumSlateBlue;
+            this.btn_dn.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.btn_dn.BorderRadius = 20;
+            this.btn_dn.BorderSize = 0;
+            this.btn_dn.FlatAppearance.BorderSize = 0;
+            this.btn_dn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_dn.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_dn.ForeColor = System.Drawing.Color.White;
+            this.btn_dn.Location = new System.Drawing.Point(52, 297);
+            this.btn_dn.Name = "btn_dn";
+            this.btn_dn.Size = new System.Drawing.Size(150, 40);
+            this.btn_dn.TabIndex = 21;
+            this.btn_dn.Text = "ĐĂNG NHẬP";
+            this.btn_dn.TextColor = System.Drawing.Color.White;
+            this.btn_dn.UseVisualStyleBackColor = false;
+            this.btn_dn.Click += new System.EventHandler(this.btn_dn_Click);
+            // 
+            // btn_thoat
+            // 
+            this.btn_thoat.BackColor = System.Drawing.Color.MediumSlateBlue;
+            this.btn_thoat.BackgroundColor = System.Drawing.Color.MediumSlateBlue;
+            this.btn_thoat.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.btn_thoat.BorderRadius = 20;
+            this.btn_thoat.BorderSize = 0;
+            this.btn_thoat.FlatAppearance.BorderSize = 0;
+            this.btn_thoat.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_thoat.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_thoat.ForeColor = System.Drawing.Color.White;
+            this.btn_thoat.Location = new System.Drawing.Point(237, 297);
+            this.btn_thoat.Name = "btn_thoat";
+            this.btn_thoat.Size = new System.Drawing.Size(150, 40);
+            this.btn_thoat.TabIndex = 22;
+            this.btn_thoat.Text = "THOÁT";
+            this.btn_thoat.TextColor = System.Drawing.Color.White;
+            this.btn_thoat.UseVisualStyleBackColor = false;
             // 
             // DangNhapNV
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(437, 383);
+            this.Controls.Add(this.btn_thoat);
+            this.Controls.Add(this.btn_dn);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.txt_mknv);
-            this.Controls.Add(this.btn_thoat);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.txt_tknv);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.btn_dnnv);
             this.Name = "DangNhapNV";
             this.Text = "DangNhapNV";
             this.Load += new System.EventHandler(this.DangNhapNV_Load);
@@ -132,10 +148,10 @@ namespace DoAnQuanLyXeMay
 
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox txt_mknv;
-        private System.Windows.Forms.Button btn_thoat;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox txt_tknv;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button btn_dnnv;
+        private ThietkeControl.ButtonDN btn_dn;
+        private ThietkeControl.ButtonDN btn_thoat;
     }
 }

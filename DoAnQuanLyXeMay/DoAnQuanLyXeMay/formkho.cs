@@ -47,7 +47,7 @@ namespace DoAnQuanLyXeMay
 
         private void button1_Click(object sender, EventArgs e)
         {
-            txt_doanhthu.Text = String.Format("{0:0,0 vnđ}", bllhdx.tinhdoanhthu(txt_ngay.Value));
+            //txt_doanhthu.Text = String.Format("{0:0,0 vnđ}", bllhdx.tinhdoanhthu(txt_ngay.Value));
         }
 
         private void label3_Click(object sender, EventArgs e)
@@ -63,6 +63,16 @@ namespace DoAnQuanLyXeMay
         private void txt_doanhthu_TextChanged(object sender, EventArgs e)
         {
            
+        }
+
+        private void buttonDN1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void buttonDN1_Click_1(object sender, EventArgs e)
+        {
+            txt_doanhthu.Text = String.Format("{0:0,0 vnđ}", bllhdx.tinhdoanhthu(txt_ngay.Value));
         }
     }
 }

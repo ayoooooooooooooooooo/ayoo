@@ -46,28 +46,7 @@ namespace DoAnQuanLyXeMay
 
         private void button1_Click(object sender, EventArgs e)
         {
-            if (txt_mkmoi.Text == "")
-                MessageBox.Show("Vui lòng nhập mật khẩu mới.", "Thông báo");
-            else
-                if (txt_xnmk.Text == "")
-                    MessageBox.Show("Vui lòng xác nhận mật khẩu.", "Thông báo");
-                else
-                {
-                    
-                    if (txt_mkmoi.Text.Equals(txt_xnmk.Text))
-                    {
-                    nhanvien.MATKHAU=txt_mkmoi.Text;
-                        if (bllnv.BLLSuaNV(nhanvien))
-                        {
-                            MessageBox.Show("Đổi mật khẩu thành công", "Thông báo");
-                            this.Close();
-                        }
-                        else
-                            MessageBox.Show("Đổi mật khẩu thất bại", "Thông báo");
-                    }
-                    else
-                        MessageBox.Show("xác nhận mật khẩu không đúng", "Thông báo");
-                }
+            
         }
         string manv;
         public doimknv(string mnv)
@@ -78,6 +57,32 @@ namespace DoAnQuanLyXeMay
         private void khthaydoithongtin_Load(object sender, EventArgs e)
         {
          
+        }
+
+        private void buttonDN1_Click(object sender, EventArgs e)
+        {
+            if (txt_mkmoi.Text == "")
+                MessageBox.Show("Vui lòng nhập mật khẩu mới.", "Thông báo");
+            else
+                if (txt_xnmk.Text == "")
+                MessageBox.Show("Vui lòng xác nhận mật khẩu.", "Thông báo");
+            else
+            {
+
+                if (txt_mkmoi.Text.Equals(txt_xnmk.Text))
+                {
+                    nhanvien.MATKHAU = txt_mkmoi.Text;
+                    if (bllnv.BLLSuaNV(nhanvien))
+                    {
+                        MessageBox.Show("Đổi mật khẩu thành công", "Thông báo");
+                        this.Close();
+                    }
+                    else
+                        MessageBox.Show("Đổi mật khẩu thất bại", "Thông báo");
+                }
+                else
+                    MessageBox.Show("xác nhận mật khẩu không đúng", "Thông báo");
+            }
         }
     }
 }

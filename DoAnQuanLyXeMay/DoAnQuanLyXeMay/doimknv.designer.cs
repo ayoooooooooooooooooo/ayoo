@@ -29,27 +29,13 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(doimknv));
-            this.button1 = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.txt_mkmoi = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.txt_xnmk = new System.Windows.Forms.TextBox();
+            this.buttonDN1 = new ThietkeControl.ButtonDN();
             this.SuspendLayout();
-            // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.Color.Aqua;
-            this.button1.Font = new System.Drawing.Font("Paytone One", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
-            this.button1.Location = new System.Drawing.Point(156, 231);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(147, 54);
-            this.button1.TabIndex = 2;
-            this.button1.Text = "Thay đổi";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // label2
             // 
@@ -108,18 +94,38 @@
             this.txt_xnmk.TabIndex = 7;
             this.txt_xnmk.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
             // 
+            // buttonDN1
+            // 
+            this.buttonDN1.BackColor = System.Drawing.Color.MediumSlateBlue;
+            this.buttonDN1.BackgroundColor = System.Drawing.Color.MediumSlateBlue;
+            this.buttonDN1.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.buttonDN1.BorderRadius = 20;
+            this.buttonDN1.BorderSize = 0;
+            this.buttonDN1.FlatAppearance.BorderSize = 0;
+            this.buttonDN1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonDN1.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonDN1.ForeColor = System.Drawing.Color.White;
+            this.buttonDN1.Location = new System.Drawing.Point(145, 241);
+            this.buttonDN1.Name = "buttonDN1";
+            this.buttonDN1.Size = new System.Drawing.Size(150, 40);
+            this.buttonDN1.TabIndex = 8;
+            this.buttonDN1.Text = "THAY ĐỔI";
+            this.buttonDN1.TextColor = System.Drawing.Color.White;
+            this.buttonDN1.UseVisualStyleBackColor = false;
+            this.buttonDN1.Click += new System.EventHandler(this.buttonDN1_Click);
+            // 
             // doimknv
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(458, 335);
+            this.Controls.Add(this.buttonDN1);
             this.Controls.Add(this.txt_xnmk);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.txt_mkmoi);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.button1);
             this.Name = "doimknv";
             this.Text = "Thay đổi mật khẩu Nhân viên";
             this.Load += new System.EventHandler(this.khthaydoithongtin_Load);
@@ -129,12 +135,11 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox txt_mkmoi;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox txt_xnmk;
+        private ThietkeControl.ButtonDN buttonDN1;
     }
 }

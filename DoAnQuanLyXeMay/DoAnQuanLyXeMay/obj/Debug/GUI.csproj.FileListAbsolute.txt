@@ -107,3 +107,5 @@ C:\cac\Học kì 1 Năm 3\PTPM\ayoo\DoAnQuanLyXeMay\DoAnQuanLyXeMay\obj\Debug\Do
 D:\HitHub\ayoo\DoAnQuanLyXeMay\DoAnQuanLyXeMay\obj\Debug\DoAnQuanLyXeMay.chitiethoadonxuat.resources
 D:\HitHub\ayoo\DoAnQuanLyXeMay\DoAnQuanLyXeMay\obj\Debug\DoAnQuanLyXeMay.HoaDonXuat.resources
 D:\HitHub\ayoo\DoAnQuanLyXeMay\DoAnQuanLyXeMay\obj\Debug\DoAnQuanLyXeMay.KhachHang.resources
+C:\cac\Học kì 1 Năm 3\PTPM\ayoo\DoAnQuanLyXeMay\DoAnQuanLyXeMay\obj\Debug\DoAnQuanLyXeMay.chitiethoadonxuat.resources
+C:\cac\Học kì 1 Năm 3\PTPM\ayoo\DoAnQuanLyXeMay\DoAnQuanLyXeMay\obj\Debug\DoAnQuanLyXeMay.KhachHang.resources
