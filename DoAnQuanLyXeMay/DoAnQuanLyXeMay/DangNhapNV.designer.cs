@@ -53,6 +53,7 @@ namespace DoAnQuanLyXeMay
             // 
             this.txt_mknv.Location = new System.Drawing.Point(184, 212);
             this.txt_mknv.Name = "txt_mknv";
+            this.txt_mknv.PasswordChar = '☼';
             this.txt_mknv.Size = new System.Drawing.Size(194, 20);
             this.txt_mknv.TabIndex = 19;
             // 

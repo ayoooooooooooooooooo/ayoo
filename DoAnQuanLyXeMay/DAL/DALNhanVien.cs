@@ -13,22 +13,26 @@ namespace DAL
         public DALNhanVien() { }
         public bool DALthemNV(NHANVIEN nv)
         {
-            NHANVIEN a = new NHANVIEN();
-            a.MANV=nv.MANV;
-            a.TENNV = nv.TENNV;
-            a.EMAILNV = nv.EMAILNV;
-            a.DIACHI = nv.DIACHI;
-            a.SDT = nv.SDT;
-            a.NGAYSINH = nv.NGAYSINH;
-            a.GIOITINH = nv.GIOITINH;
-            a.TAIKHOAN = nv.TAIKHOAN;
-            a.MATKHAU = nv.MATKHAU;
-            a.PHANLOAI = nv.PHANLOAI;
-            a.NGAYVL = nv.NGAYVL;
-            a.CMND = nv.CMND;
-            qL.NHANVIENs.InsertOnSubmit(a);
-            qL.SubmitChanges();
-            return true;      
+            try
+            {
+                NHANVIEN a = new NHANVIEN();
+                a.MANV = nv.MANV;
+                a.TENNV = nv.TENNV;
+                a.EMAILNV = nv.EMAILNV;
+                a.DIACHI = nv.DIACHI;
+                a.SDT = nv.SDT;
+                a.NGAYSINH = nv.NGAYSINH;
+                a.GIOITINH = nv.GIOITINH;
+                a.TAIKHOAN = nv.TAIKHOAN;
+                a.MATKHAU = nv.MATKHAU;
+                a.PHANLOAI = nv.PHANLOAI;
+                a.NGAYVL = nv.NGAYVL;
+                a.CMND = nv.CMND;
+                qL.NHANVIENs.InsertOnSubmit(a);
+                qL.SubmitChanges();
+                return true;
+            }
+            catch { return false; }
         }
         public bool DALSuaNV(NHANVIEN nv)
         {
@@ -57,6 +61,27 @@ namespace DAL
             {
               return false;
             }
+        }
+        public bool DALxoaNV(string manv)
+        {
+
+            try
+            {
+                NHANVIEN nhanvien = qL.NHANVIENs.Where(t => t.MANV == manv).FirstOrDefault();
+                if (nhanvien != null)
+                {
+
+                    qL.NHANVIENs.DeleteOnSubmit(nhanvien);
+                    qL.SubmitChanges();
+                    return true;
+
+                }
+                else
+                {
+                    return false;
+                }
+            }
+            catch { return false; }
         }
         public NHANVIEN DALLay1NV(string manv)
         {

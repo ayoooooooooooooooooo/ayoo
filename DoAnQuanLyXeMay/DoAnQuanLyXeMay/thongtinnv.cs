@@ -27,37 +27,20 @@ namespace DoAnQuanLyXeMay
         {
 
         }
-        void Databingding(List<NHANVIEN> pDT)
-        {
-            txt_manv.DataBindings.Clear();
-            txt_hoten.DataBindings.Clear();
-            txt_ngaysinh.DataBindings.Clear();
-            txt_ngayvl.DataBindings.Clear();
-            txt_phanloai.DataBindings.Clear();
-            txt_sodt.DataBindings.Clear();
-            txt_gt.DataBindings.Clear();
-            txt_email.DataBindings.Clear();
-            txt_diachi.DataBindings.Clear();
-            txt_cmnd.DataBindings.Clear();
-
-
-            txt_manv.DataBindings.Add("Text", pDT, "MANV");
-            txt_hoten.DataBindings.Add("Text", pDT, "TENNV");
-            txt_ngaysinh.DataBindings.Add("Text", pDT, "NGAYSINH");
-            txt_ngayvl.DataBindings.Add("Text", pDT, "NGAYVL");
-            txt_phanloai.DataBindings.Add("Text", pDT, "PHANLOAI");
-            txt_sodt.DataBindings.Add("Text", pDT, "SDT");
-            txt_gt.DataBindings.Add("Text", pDT, "GIOITINH");
-            txt_email.DataBindings.Add("Text", pDT, "EMAILNV");
-            txt_diachi.DataBindings.Add("Text", pDT, "DIACHI");
-            txt_cmnd.DataBindings.Add("Text", pDT, "CMND");
-
-        }
+     
 
         private void Form1_Load(object sender, EventArgs e)
         {
             dataGridView1.DataSource = bllnv.dsNhanVien();
-            Databingding(bllnv.dsNhanVien());
+            List<string> listgt = new List<string>();
+            List<string> listpl = new List<string>();
+            listgt.Add("Nam");
+            listgt.Add("Nữ");
+            listpl.Add("ql");
+            listpl.Add("nv"); 
+            txt_gt.DataSource= listgt;
+            txt_pl.DataSource= listpl; 
+            btn_sua.Enabled = btn_xoa.Enabled = false;
         }
 
         private void btn_them_Click(object sender, EventArgs e)
@@ -69,33 +52,48 @@ namespace DoAnQuanLyXeMay
 
         private void btn_luu_Click(object sender, EventArgs e)
         {
-            txt_manv.DataBindings.Clear();
-            txt_hoten.DataBindings.Clear();
-            txt_ngaysinh.DataBindings.Clear();
-            txt_ngayvl.DataBindings.Clear();
-            txt_phanloai.DataBindings.Clear();
-            txt_sodt.DataBindings.Clear();
-            txt_gt.DataBindings.Clear();
-            txt_email.DataBindings.Clear();
-            txt_diachi.DataBindings.Clear();
-            txt_cmnd.DataBindings.Clear();
-            //if (xldl.suanv(txt_hoten.Text, txt_manv.Text, txt_email.Text, txt_diachi.Text, txt_sodt.Text, txt_ngaysinh.Text, txt_gt.Text,txt_phanloai.Text, txt_ngayvl.Text, txt_cmnd.Text))
-            //    MessageBox.Show("Sửa thành công", "Thông báo");
-            //else
-            //    MessageBox.Show("Sửa thất bại", "Thông báo");
+            NHANVIEN nv = new NHANVIEN();
+
+            nv.MANV = txt_manv.Text;
+            nv.TENNV = txt_hoten.Text;
+            nv.SDT = txt_sodt.Text;
+            nv.EMAILNV = txt_email.Text;
+            nv.NGAYVL = txt_ngayvl.Value;
+            nv.CMND = txt_cmnd.Text;
+            nv.DIACHI = txt_diachi.Text;
+            nv.GIOITINH = txt_gt.SelectedItem.ToString();
+            nv.MATKHAU = dataGridView1.CurrentRow.Cells[8].Value.ToString();
+            nv.TAIKHOAN = dataGridView1.CurrentRow.Cells[7].Value.ToString();
+            nv.NGAYSINH = txt_ngaysinh.Value;
+            nv.PHANLOAI = txt_pl.SelectedItem.ToString();
+            txt_manv.Enabled = false;
+            if (bllnv.BLLSuaNV(nv))
+            {
+                MessageBox.Show("Sửa nhân viên thành công");
+                dataGridView1.DataSource = bllnv.dsNhanVien();
+            }
+            else
+                MessageBox.Show("Sửa nhân viên thất bại");
+            btn_luu.Enabled=btn_sua.Enabled = btn_xoa.Enabled = false;
         }
 
         private void btn_xoa_Click(object sender, EventArgs e)
         {
-            //if (xldl.xoanv(dataGridView1.CurrentRow.Cells[0].Value.ToString()))
-            //    MessageBox.Show("Xóa thành công", "Thông báo");
-            //else
-            //    MessageBox.Show("Xóa thất bại", "Thông báo");
+            if (bllnv.BLLxoaNV(dataGridView1.CurrentRow.Cells[0].Value.ToString()))
+            {
+                MessageBox.Show("Xóa thành công", "Thông báo");
+                dataGridView1.DataSource=bllnv.dsNhanVien();
+            }
+            else
+                MessageBox.Show("Xóa thất bại", "Thông báo");
         }
 
         private void btn_sua_Click(object sender, EventArgs e)
         {
             txt_manv.Enabled = false;
+            btn_luu.Enabled = true;
+        
+      
         }
         string mnv=""; 
             bool loai=true;
@@ -114,12 +112,31 @@ namespace DoAnQuanLyXeMay
         BLLNHhanVien bllnv=new BLLNHhanVien();
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            Databingding(bllnv.dsNhanVien());
+        
         }
 
         private void groupBox1_Enter(object sender, EventArgs e)
         {
 
+        }
+
+        private void dataGridView1_Click(object sender, EventArgs e)
+        {
+            txt_cmnd.Text = dataGridView1.CurrentRow.Cells[11].Value.ToString();
+            txt_diachi.Text = dataGridView1.CurrentRow.Cells[3].Value.ToString();
+            txt_email.Text = dataGridView1.CurrentRow.Cells[2].Value.ToString();
+            //txt_gt.Text = dataGridView1.CurrentRow.Cells[6].Value.ToString();
+            txt_hoten.Text = dataGridView1.CurrentRow.Cells[1].Value.ToString();
+            txt_manv.Text = dataGridView1.CurrentRow.Cells[0].Value.ToString();
+            //txt_phanloai.Text = dataGridView1.CurrentRow.Cells[9].Value.ToString();
+            txt_sodt.Text = dataGridView1.CurrentRow.Cells[4].Value.ToString();
+            string ns = dataGridView1.CurrentRow.Cells[5].Value.ToString();
+            string nvl = dataGridView1.CurrentRow.Cells[10].Value.ToString();
+            txt_ngaysinh.Value = DateTime.Parse(ns);
+            txt_ngaysinh.Text = txt_ngaysinh.Value.ToString("yyyy-MM-dd");
+            txt_ngayvl.Value = DateTime.Parse(nvl);
+            txt_ngayvl.Text = txt_ngayvl.Value.ToString("yyyy-MM-dd");
+            btn_sua.Enabled = btn_xoa.Enabled = true;
         }
     }
 }

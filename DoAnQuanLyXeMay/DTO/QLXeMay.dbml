@@ -1,5 +1,17 @@
 ﻿<?xml version="1.0" encoding="utf-8"?><Database Name="DOAN" Class="QLXeMayDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
   <Connection Mode="AppSettings" ConnectionString="Data Source=CUBON;Initial Catalog=DOAN;Integrated Security=True" SettingsObjectName="DTO.Properties.Settings" SettingsPropertyName="DOANConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.CHITIETHDNHAP" Member="CHITIETHDNHAPs">
+    <Type Name="CHITIETHDNHAP">
+      <Column Name="MAHD" Type="System.String" DbType="VarChar(10) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="MASP" Type="System.String" DbType="VarChar(10) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="SL" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="DONGIA" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="THUE" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="THANHTIEN" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Association Name="SANPHAM_CHITIETHDNHAP" Member="SANPHAM" ThisKey="MASP" OtherKey="MASP" Type="SANPHAM" IsForeignKey="true" DeleteRule="CASCADE" DeleteOnNull="true" />
+      <Association Name="HOADONNHAP_CHITIETHDNHAP" Member="HOADONNHAP" ThisKey="MAHD" OtherKey="MAHD" Type="HOADONNHAP" IsForeignKey="true" DeleteRule="CASCADE" DeleteOnNull="true" />
+    </Type>
+  </Table>
   <Table Name="dbo.SANPHAM" Member="SANPHAMs">
     <Type Name="SANPHAM">
       <Column Name="MASP" Type="System.String" DbType="VarChar(10) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
@@ -14,27 +26,15 @@
       <Association Name="SANPHAM_CHITIETHDXUAT" Member="CHITIETHDXUATs" ThisKey="MASP" OtherKey="MASP" Type="CHITIETHDXUAT" />
     </Type>
   </Table>
-  <Table Name="dbo.CHITIETHDNHAP" Member="CHITIETHDNHAPs">
-    <Type Name="CHITIETHDNHAP">
-      <Column Name="MAHD" Type="System.String" DbType="VarChar(10) NOT NULL" CanBeNull="false" />
-      <Column Name="MASP" Type="System.String" DbType="VarChar(10) NOT NULL" CanBeNull="false" />
-      <Column Name="SL" Type="System.Int32" DbType="Int" CanBeNull="true" />
-      <Column Name="DONGIA" Type="System.Decimal" DbType="Money" CanBeNull="true" />
-      <Column Name="THUE" Type="System.Double" DbType="Float" CanBeNull="true" />
-      <Column Name="THANHTIEN" Type="System.Decimal" DbType="Money" CanBeNull="true" />
-      <Association Name="SANPHAM_CHITIETHDNHAP" Member="SANPHAM" ThisKey="MASP" OtherKey="MASP" Type="SANPHAM" IsForeignKey="true" DeleteRule="CASCADE" DeleteOnNull="true" />
-      <Association Name="HOADONNHAP_CHITIETHDNHAP" Member="HOADONNHAP" ThisKey="MAHD" OtherKey="MAHD" Type="HOADONNHAP" IsForeignKey="true" DeleteRule="CASCADE" DeleteOnNull="true" />
-    </Type>
-  </Table>
   <Table Name="dbo.CHITIETHDXUAT" Member="CHITIETHDXUATs">
     <Type Name="CHITIETHDXUAT">
       <Column Name="MAHD" Type="System.String" DbType="VarChar(10) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
-      <Column Name="MASP" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="MASP" Type="System.String" DbType="VarChar(10) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
       <Column Name="SL" Type="System.Int32" DbType="Int" CanBeNull="true" />
       <Column Name="DONGIA" Type="System.Decimal" DbType="Money" CanBeNull="true" />
       <Column Name="THUE" Type="System.Double" DbType="Float" CanBeNull="true" />
       <Column Name="THANHTIEN" Type="System.Decimal" DbType="Money" CanBeNull="true" />
-      <Association Name="SANPHAM_CHITIETHDXUAT" Member="SANPHAM" ThisKey="MASP" OtherKey="MASP" Type="SANPHAM" IsForeignKey="true" DeleteRule="CASCADE" />
+      <Association Name="SANPHAM_CHITIETHDXUAT" Member="SANPHAM" ThisKey="MASP" OtherKey="MASP" Type="SANPHAM" IsForeignKey="true" DeleteRule="CASCADE" DeleteOnNull="true" />
       <Association Name="HOADONXUAT_CHITIETHDXUAT" Member="HOADONXUAT" ThisKey="MAHD" OtherKey="MAHD" Type="HOADONXUAT" IsForeignKey="true" DeleteRule="CASCADE" DeleteOnNull="true" />
     </Type>
   </Table>
@@ -53,7 +53,7 @@
       <Column Name="MAKH" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
       <Column Name="MANV" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
       <Column Name="NGAYBAN" Type="System.DateTime" DbType="Date" CanBeNull="true" />
-      <Association Name="HOADONXUAT_CHITIETHDXUAT" Member="CHITIETHDXUAT" ThisKey="MAHD" OtherKey="MAHD" Type="CHITIETHDXUAT" Cardinality="One" />
+      <Association Name="HOADONXUAT_CHITIETHDXUAT" Member="CHITIETHDXUATs" ThisKey="MAHD" OtherKey="MAHD" Type="CHITIETHDXUAT" />
       <Association Name="KHACHHANG_HOADONXUAT" Member="KHACHHANG" ThisKey="MAKH" OtherKey="MAKH" Type="KHACHHANG" IsForeignKey="true" />
     </Type>
   </Table>

@@ -11,6 +11,7 @@ namespace BLL
     {
         public BLLCTHDXuat() { }
         DALCTHDXUAT dalctxuat= new DALCTHDXUAT();
+        DALCTHDNHAP dalctnhap = new DALCTHDNHAP();
         public List<CHITIETHDXUAT> lstcthdxuat()
         { return dalctxuat.lsthdx(); }
         public List<CHITIETHDXUAT> lstcthdxuat(string mahd)
@@ -25,21 +26,42 @@ namespace BLL
             }
             return lstxuattheoma;
         }
-        public bool xoahdn(string mahd)
+        public bool xoahdx(string masp,string mahd)
         {
-            return dalctxuat.xoacthdx(mahd);
+            return dalctxuat.xoacthdx(masp, mahd);
 
         }
-        public bool suahdn(CHITIETHDXUAT hdx)
+        public bool suahdx(CHITIETHDXUAT hdx)
         {
             return dalctxuat.suacthdx(hdx);
 
         }
-        public bool themhdn(CHITIETHDXUAT hdx)
+        public bool themhdx(CHITIETHDXUAT hdx)
         {
             return dalctxuat.themcthdx(hdx);
 
         }
+       public double tinhtien(string mahd)
+        
+        {
+            double kq = 0;
+            if(mahd.Substring(0,3).Equals("HDX"))
+            {
+                foreach(CHITIETHDXUAT hdx in lstcthdxuat(mahd))
+                {
+                    kq += double.Parse(hdx.THANHTIEN.ToString());
 
+                }    
+            }    
+            else
+                foreach (CHITIETHDNHAP hdn in dalctnhap.lsthdn())
+                {
+                    if(hdn.MAHD.Equals(mahd))
+                    kq += double.Parse(hdn.THANHTIEN.ToString());
+
+                }
+            return kq;
+        }
+        
     }
 }

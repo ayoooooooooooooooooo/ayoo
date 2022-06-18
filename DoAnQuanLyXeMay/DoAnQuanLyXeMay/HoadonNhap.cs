@@ -81,9 +81,9 @@ namespace DoAnQuanLyXeMay
         private void HoadonNhap_Load(object sender, EventArgs e)
         {
             dataGridView1.DataSource = bLLHDNhap.dsHDNhap();
-            //dataGridView1.Columns[4].Visible = false;
+            dataGridView1.Columns[3].Visible = false;
             //dataGridView1.Columns[5].Visible = false;
-   
+            dt_ngayban.Enabled = false;
             txt_mahd.Enabled=false;
             txt_manv.Text = manv;
             txt_manv.Enabled = false;
@@ -145,6 +145,7 @@ namespace DoAnQuanLyXeMay
                 else
                     MessageBox.Show("Sửa hóa đơn thất bại", "Thông báo");
             }
+            dt_ngayban.Enabled=false;
         }
 
         private void btn_suahdn_Click(object sender, EventArgs e)
@@ -156,11 +157,7 @@ namespace DoAnQuanLyXeMay
 
         private void dataGridView1_SelectionChanged(object sender, EventArgs e)
         {
-            txt_mahd.Text = dataGridView1.CurrentRow.Cells[0].Value.ToString();
-            txt_manv.Text = dataGridView1.CurrentRow.Cells[1].Value.ToString();
-            string a = dataGridView1.CurrentRow.Cells[2].Value.ToString();
-            dt_ngayban.Value = DateTime.Parse(a);
-            dt_ngayban.Text = dt_ngayban.Value.ToString("yyyy-MM-dd");
+            
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
@@ -172,6 +169,16 @@ namespace DoAnQuanLyXeMay
         {
             chitiethoadonxuat  a= new chitiethoadonxuat(dataGridView1.CurrentRow.Cells[0].Value.ToString());
             a.Show();
+            this.Close();
+        }
+
+        private void dataGridView1_Click(object sender, EventArgs e)
+        {
+            txt_mahd.Text = dataGridView1.CurrentRow.Cells[0].Value.ToString();
+            txt_manv.Text = dataGridView1.CurrentRow.Cells[1].Value.ToString();
+            string a = dataGridView1.CurrentRow.Cells[2].Value.ToString();
+            dt_ngayban.Value = DateTime.Parse(a);
+            dt_ngayban.Text = dt_ngayban.Value.ToString("yyyy-MM-dd");
         }
     }
 }

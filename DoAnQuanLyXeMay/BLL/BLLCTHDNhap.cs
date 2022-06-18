@@ -27,5 +27,24 @@ namespace BLL
             }
             return lstnhaptheoma;
         }
+        public double tinhthanhtien(double dongia,double sl,double thue)
+        {
+            return dongia * sl + thue * dongia*sl;
+        }
+        public bool xoahdn(string masp,string mahd)
+        {
+            return dalcthdn.xoacthdn(masp,mahd);
+
+        }
+        public bool suahdn(CHITIETHDNHAP hdn)
+        {
+            return dalcthdn.suacthdn(hdn);
+
+        }
+        public bool themhdn(CHITIETHDNHAP hdn)
+        {
+            return dalcthdn.themcthdn(hdn);
+
+        }
     }
 }

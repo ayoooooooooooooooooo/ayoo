@@ -23,8 +23,8 @@ namespace DoAnQuanLyXeMay
         private void HoaDonXuat_Load(object sender, EventArgs e)
         {
             dataGridView1.DataSource = bllHDXuat.dsHDXuat();
-            dataGridView1.Columns[4].Visible=false;
-            dataGridView1.Columns[5].Visible = false;
+            dataGridView1.Columns[4].Visible = false;
+            //dataGridView1.Columns[5].Visible = false;
             txt_makh.DataSource = bLLKhachHang.dskhachhang();
             txt_makh.ValueMember = "MAKH";
             txt_makh.DisplayMember = "TENKH";
@@ -33,7 +33,7 @@ namespace DoAnQuanLyXeMay
             btn_luu.Enabled = false;
         }
        
-        string manv,mkh;
+        string manv;
          public HoaDonXuat(string manhanvien):this()
         {
             manv = manhanvien;
@@ -129,6 +129,7 @@ namespace DoAnQuanLyXeMay
         {
             chitiethoadonxuat a = new chitiethoadonxuat(dataGridView1.CurrentRow.Cells[0].Value.ToString());
             a.Show();
+            this.Close();
         }
 
         private void dataGridView1_Click(object sender, EventArgs e)

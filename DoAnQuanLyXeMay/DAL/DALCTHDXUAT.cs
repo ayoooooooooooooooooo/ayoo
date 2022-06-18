@@ -15,11 +15,11 @@ namespace DAL
             return qlxm.CHITIETHDXUATs.Select(t => t).ToList();
 
         }
-        public bool xoacthdx(string mahd)
+        public bool xoacthdx(string masp,string mahd)
         {
             try
             {
-                CHITIETHDXUAT cthdx = qlxm.CHITIETHDXUATs.Single(t => t.MAHD.Equals(mahd));
+                CHITIETHDXUAT cthdx = qlxm.CHITIETHDXUATs.Single(t => t.MASP.Equals(masp) && t.MAHD.Equals(mahd));
                 if (cthdx != null)
                 {
                     qlxm.CHITIETHDXUATs.DeleteOnSubmit(cthdx);
@@ -42,7 +42,7 @@ namespace DAL
 
                 CHITIETHDXUAT cthoadonx = qlxm.CHITIETHDXUATs.Single(t => t.MAHD.Equals(cthdx.MAHD));
 
-                cthoadonx.MASP = cthdx.MASP;
+            
                 cthoadonx.SL = cthdx.SL;
                 cthoadonx.DONGIA = cthdx.DONGIA;
                 cthoadonx.THUE = cthdx.THUE;

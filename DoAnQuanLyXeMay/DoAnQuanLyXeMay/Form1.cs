@@ -18,14 +18,16 @@ namespace DoAnQuanLyXeMay
         {
             InitializeComponent();
         }
+        public Form1(string cac):this()
+        {
+        
+        }
         BLLNHhanVien bllnv = new BLLNHhanVien();
        
         private void Form1_Load(object sender, EventArgs e)
         {
            
-            comboBox1.DisplayMember = "TENNV";
-            comboBox1.ValueMember = "MANV";
-            comboBox1.DataSource = bllnv.dsNhanVien();
+           
         }
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
@@ -36,8 +38,7 @@ namespace DoAnQuanLyXeMay
 
         private void button1_Click(object sender, EventArgs e)
         {
-            DangNhapNV a = new DangNhapNV();
-            a.Show();
+          
         }
        
         private void button1_MouseMove(object sender, MouseEventArgs e)
@@ -76,16 +77,34 @@ namespace DoAnQuanLyXeMay
 
         private void buttonDN1_Click(object sender, EventArgs e)
         {
-            DangNhapNV a = new DangNhapNV();
-            a.Show();
+        
             
         }
 
         private void buttonDN2_Click(object sender, EventArgs e)
         {
-            doimknv a = new doimknv(bllnv.BLLLay1NV(comboBox1.SelectedValue.ToString()));
+           
+        }
 
+        private void đăngNhậpToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            DangNhapNV a = new DangNhapNV();
+            a.MdiParent = this;
             a.Show();
+        }
+
+        private void thoátToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void Form1_FormClosing(object sender, FormClosingEventArgs e)
+        {
+
+            if (MessageBox.Show("Bạn có muốn thoát chương trình?", "THÔNG BÁO ", MessageBoxButtons.OKCancel) != System.Windows.Forms.DialogResult.OK)
+            {
+                e.Cancel = true;
+            }
         }
     }
 }

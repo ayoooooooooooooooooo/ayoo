@@ -50,8 +50,12 @@ namespace BLL
                 return nv.TENNV; 
             
 
-        }   
-
+        }
+        public bool BLLxoaNV(string manv)
+        {
+           return dalnv.DALxoaNV(manv);
+           
+        }
         public bool dangNhapNV(string tk,string mk)
         {
             List<NHANVIEN> listnv = dsNhanVien();

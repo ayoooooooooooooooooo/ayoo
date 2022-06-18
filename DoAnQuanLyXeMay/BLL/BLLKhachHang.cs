@@ -17,5 +17,17 @@ namespace BLL
         {
             return dalkh.dsKhachHang();
         }
+        public bool themkh(KHACHHANG kh)
+        {
+            return dalkh.themkh(kh);
+        }
+        public bool xoakh(string makh)
+        {
+            return dalkh.xoakh(makh);
+        }
+        public bool suakh(KHACHHANG kh)
+        {
+            return dalkh.suakh(kh);
+        }
     }
 }

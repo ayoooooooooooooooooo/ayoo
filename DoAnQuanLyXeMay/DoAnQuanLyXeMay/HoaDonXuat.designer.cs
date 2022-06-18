@@ -34,7 +34,7 @@ namespace DoAnQuanLyXeMay
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.btn_inhd = new System.Windows.Forms.Button();
+            this.txt_makh = new System.Windows.Forms.ComboBox();
             this.btn_luu = new System.Windows.Forms.Button();
             this.dt_ngayban = new System.Windows.Forms.DateTimePicker();
             this.txt_manv = new System.Windows.Forms.TextBox();
@@ -44,16 +44,15 @@ namespace DoAnQuanLyXeMay
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.cl_mhd = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cl_makh = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cl_manv = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ctx_hdxuat = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.btn_themhdx = new System.Windows.Forms.ToolStripMenuItem();
             this.btn_xoahdx = new System.Windows.Forms.ToolStripMenuItem();
             this.btn_suahdx = new System.Windows.Forms.ToolStripMenuItem();
             this.btn_xcthdx = new System.Windows.Forms.ToolStripMenuItem();
-            this.cl_mhd = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.cl_makh = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.cl_manv = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.txt_makh = new System.Windows.Forms.ComboBox();
             this.tableLayoutPanel1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -96,7 +95,6 @@ namespace DoAnQuanLyXeMay
             // 
             this.groupBox1.BackColor = System.Drawing.SystemColors.GrayText;
             this.groupBox1.Controls.Add(this.txt_makh);
-            this.groupBox1.Controls.Add(this.btn_inhd);
             this.groupBox1.Controls.Add(this.btn_luu);
             this.groupBox1.Controls.Add(this.dt_ngayban);
             this.groupBox1.Controls.Add(this.txt_manv);
@@ -115,23 +113,19 @@ namespace DoAnQuanLyXeMay
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Hóa đơn";
             // 
-            // btn_inhd
+            // txt_makh
             // 
-            this.btn_inhd.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_inhd.ForeColor = System.Drawing.Color.Maroon;
-            this.btn_inhd.Location = new System.Drawing.Point(554, 181);
-            this.btn_inhd.Name = "btn_inhd";
-            this.btn_inhd.Size = new System.Drawing.Size(162, 38);
-            this.btn_inhd.TabIndex = 62;
-            this.btn_inhd.Text = "IN HÓA ĐƠN";
-            this.btn_inhd.UseVisualStyleBackColor = true;
-            this.btn_inhd.Click += new System.EventHandler(this.button1_Click);
+            this.txt_makh.FormattingEnabled = true;
+            this.txt_makh.Location = new System.Drawing.Point(212, 119);
+            this.txt_makh.Name = "txt_makh";
+            this.txt_makh.Size = new System.Drawing.Size(177, 24);
+            this.txt_makh.TabIndex = 64;
             // 
             // btn_luu
             // 
             this.btn_luu.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_luu.ForeColor = System.Drawing.Color.Maroon;
-            this.btn_luu.Location = new System.Drawing.Point(227, 181);
+            this.btn_luu.Location = new System.Drawing.Point(360, 200);
             this.btn_luu.Name = "btn_luu";
             this.btn_luu.Size = new System.Drawing.Size(162, 38);
             this.btn_luu.TabIndex = 51;
@@ -231,6 +225,34 @@ namespace DoAnQuanLyXeMay
             this.dataGridView1.SelectionChanged += new System.EventHandler(this.dataGridView1_SelectionChanged);
             this.dataGridView1.Click += new System.EventHandler(this.dataGridView1_Click);
             // 
+            // cl_mhd
+            // 
+            this.cl_mhd.DataPropertyName = "MAHD";
+            this.cl_mhd.HeaderText = "Mã Hóa Đơn";
+            this.cl_mhd.Name = "cl_mhd";
+            this.cl_mhd.ReadOnly = true;
+            // 
+            // Column1
+            // 
+            this.Column1.DataPropertyName = "NGAYBAN";
+            this.Column1.HeaderText = "Ngày bán";
+            this.Column1.Name = "Column1";
+            this.Column1.ReadOnly = true;
+            // 
+            // cl_makh
+            // 
+            this.cl_makh.DataPropertyName = "MAKH";
+            this.cl_makh.HeaderText = "Mã Khách Hàng";
+            this.cl_makh.Name = "cl_makh";
+            this.cl_makh.ReadOnly = true;
+            // 
+            // cl_manv
+            // 
+            this.cl_manv.DataPropertyName = "MANV";
+            this.cl_manv.HeaderText = "Mã Nhân Viên";
+            this.cl_manv.Name = "cl_manv";
+            this.cl_manv.ReadOnly = true;
+            // 
             // ctx_hdxuat
             // 
             this.ctx_hdxuat.Font = new System.Drawing.Font("Showcard Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -274,42 +296,6 @@ namespace DoAnQuanLyXeMay
             this.btn_xcthdx.Text = "Xem chi tiết";
             this.btn_xcthdx.Click += new System.EventHandler(this.btn_xcthdx_Click);
             // 
-            // cl_mhd
-            // 
-            this.cl_mhd.DataPropertyName = "MAHD";
-            this.cl_mhd.HeaderText = "Mã Hóa Đơn";
-            this.cl_mhd.Name = "cl_mhd";
-            this.cl_mhd.ReadOnly = true;
-            // 
-            // Column1
-            // 
-            this.Column1.DataPropertyName = "NGAYBAN";
-            this.Column1.HeaderText = "Ngày bán";
-            this.Column1.Name = "Column1";
-            this.Column1.ReadOnly = true;
-            // 
-            // cl_makh
-            // 
-            this.cl_makh.DataPropertyName = "MAKH";
-            this.cl_makh.HeaderText = "Mã Khách Hàng";
-            this.cl_makh.Name = "cl_makh";
-            this.cl_makh.ReadOnly = true;
-            // 
-            // cl_manv
-            // 
-            this.cl_manv.DataPropertyName = "MANV";
-            this.cl_manv.HeaderText = "Mã Nhân Viên";
-            this.cl_manv.Name = "cl_manv";
-            this.cl_manv.ReadOnly = true;
-            // 
-            // txt_makh
-            // 
-            this.txt_makh.FormattingEnabled = true;
-            this.txt_makh.Location = new System.Drawing.Point(212, 119);
-            this.txt_makh.Name = "txt_makh";
-            this.txt_makh.Size = new System.Drawing.Size(177, 24);
-            this.txt_makh.TabIndex = 64;
-            // 
             // HoaDonXuat
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -348,7 +334,6 @@ namespace DoAnQuanLyXeMay
         private System.Windows.Forms.ToolStripMenuItem btn_suahdx;
         private System.Windows.Forms.ToolStripMenuItem btn_xcthdx;
         private System.Windows.Forms.Button btn_luu;
-        private System.Windows.Forms.Button btn_inhd;
         private System.Windows.Forms.DataGridViewTextBoxColumn cl_mhd;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
         private System.Windows.Forms.DataGridViewTextBoxColumn cl_makh;

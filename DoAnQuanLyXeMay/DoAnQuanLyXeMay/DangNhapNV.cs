@@ -58,15 +58,16 @@ namespace DoAnQuanLyXeMay
         {
             if (bllnv.dangNhapNV(txt_tknv.Text, txt_mknv.Text))
             {
-                bool n = true;
+              
                 NHANVIEN nv = bllnv.BLLLay1NV(txt_tknv.Text, txt_mknv.Text);
                 if (nv.PHANLOAI.Equals("ql"))
                 {
-
+                   
                     nhanvien a = new nhanvien(true, nv.MANV);
-                    a.Show();
-                    this.Close();
 
+                    a.Show();
+                    
+                    this.Visible=false;
                 }
                 else
                 {

@@ -86,7 +86,19 @@ namespace BLL
             }
             return lstk;
         }
+        public bool Ktraxetrongkho(string masp,int sl) 
+        {
 
+            foreach (kho k in tinhkho())
+                if (masp.Equals(k.Masp))
+                        if (k.Soluong >= sl)
+                            return true;
+                        else
+                            return false;
+
+            return false;
+         
+        }
         public bool xoahdx(string mahd)
         {
             return daHDXuat.xoahdx(mahd);

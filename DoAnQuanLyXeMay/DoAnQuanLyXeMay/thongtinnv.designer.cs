@@ -36,7 +36,6 @@ namespace DoAnQuanLyXeMay
             this.txt_ngayvl = new System.Windows.Forms.DateTimePicker();
             this.txt_email = new System.Windows.Forms.TextBox();
             this.txt_cmnd = new System.Windows.Forms.TextBox();
-            this.txt_phanloai = new System.Windows.Forms.TextBox();
             this.txt_sodt = new System.Windows.Forms.TextBox();
             this.label11 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
@@ -45,7 +44,6 @@ namespace DoAnQuanLyXeMay
             this.label7 = new System.Windows.Forms.Label();
             this.txt_ngaysinh = new System.Windows.Forms.DateTimePicker();
             this.txt_diachi = new System.Windows.Forms.TextBox();
-            this.txt_gt = new System.Windows.Forms.TextBox();
             this.txt_hoten = new System.Windows.Forms.TextBox();
             this.txt_manv = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
@@ -59,15 +57,22 @@ namespace DoAnQuanLyXeMay
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.btn_luu = new System.Windows.Forms.Button();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column13 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column10 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column11 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column12 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.btn_luu = new System.Windows.Forms.Button();
+            this.txt_gt = new System.Windows.Forms.ComboBox();
+            this.txt_pl = new System.Windows.Forms.ComboBox();
             this.groupBox1.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -109,10 +114,11 @@ namespace DoAnQuanLyXeMay
             // 
             this.groupBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.tableLayoutPanel1.SetColumnSpan(this.groupBox1, 4);
+            this.groupBox1.Controls.Add(this.txt_pl);
+            this.groupBox1.Controls.Add(this.txt_gt);
             this.groupBox1.Controls.Add(this.txt_ngayvl);
             this.groupBox1.Controls.Add(this.txt_email);
             this.groupBox1.Controls.Add(this.txt_cmnd);
-            this.groupBox1.Controls.Add(this.txt_phanloai);
             this.groupBox1.Controls.Add(this.txt_sodt);
             this.groupBox1.Controls.Add(this.label11);
             this.groupBox1.Controls.Add(this.label10);
@@ -121,7 +127,6 @@ namespace DoAnQuanLyXeMay
             this.groupBox1.Controls.Add(this.label7);
             this.groupBox1.Controls.Add(this.txt_ngaysinh);
             this.groupBox1.Controls.Add(this.txt_diachi);
-            this.groupBox1.Controls.Add(this.txt_gt);
             this.groupBox1.Controls.Add(this.txt_hoten);
             this.groupBox1.Controls.Add(this.txt_manv);
             this.groupBox1.Controls.Add(this.label6);
@@ -160,13 +165,6 @@ namespace DoAnQuanLyXeMay
             this.txt_cmnd.Name = "txt_cmnd";
             this.txt_cmnd.Size = new System.Drawing.Size(182, 20);
             this.txt_cmnd.TabIndex = 19;
-            // 
-            // txt_phanloai
-            // 
-            this.txt_phanloai.Location = new System.Drawing.Point(527, 75);
-            this.txt_phanloai.Name = "txt_phanloai";
-            this.txt_phanloai.Size = new System.Drawing.Size(182, 20);
-            this.txt_phanloai.TabIndex = 18;
             // 
             // txt_sodt
             // 
@@ -246,13 +244,6 @@ namespace DoAnQuanLyXeMay
             this.txt_diachi.Name = "txt_diachi";
             this.txt_diachi.Size = new System.Drawing.Size(181, 20);
             this.txt_diachi.TabIndex = 8;
-            // 
-            // txt_gt
-            // 
-            this.txt_gt.Location = new System.Drawing.Point(135, 129);
-            this.txt_gt.Name = "txt_gt";
-            this.txt_gt.Size = new System.Drawing.Size(181, 20);
-            this.txt_gt.TabIndex = 7;
             // 
             // txt_hoten
             // 
@@ -374,7 +365,7 @@ namespace DoAnQuanLyXeMay
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50.10571F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 49.89429F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 227F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 159F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 160F));
             this.tableLayoutPanel1.Controls.Add(this.groupBox2, 0, 2);
             this.tableLayoutPanel1.Controls.Add(this.label1, 0, 0);
             this.tableLayoutPanel1.Controls.Add(this.groupBox1, 0, 1);
@@ -416,9 +407,14 @@ namespace DoAnQuanLyXeMay
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Column1,
+            this.Column13,
             this.Column2,
             this.Column3,
             this.Column4,
+            this.Column9,
+            this.Column10,
+            this.Column11,
+            this.Column12,
             this.Column5,
             this.Column6,
             this.Column7,
@@ -431,6 +427,20 @@ namespace DoAnQuanLyXeMay
             this.dataGridView1.Size = new System.Drawing.Size(848, 260);
             this.dataGridView1.TabIndex = 0;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
+            this.dataGridView1.Click += new System.EventHandler(this.dataGridView1_Click);
+            // 
+            // btn_luu
+            // 
+            this.tableLayoutPanel1.SetColumnSpan(this.btn_luu, 2);
+            this.btn_luu.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btn_luu.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_luu.Location = new System.Drawing.Point(240, 638);
+            this.btn_luu.Name = "btn_luu";
+            this.btn_luu.Size = new System.Drawing.Size(457, 29);
+            this.btn_luu.TabIndex = 23;
+            this.btn_luu.Text = "Lưu";
+            this.btn_luu.UseVisualStyleBackColor = true;
+            this.btn_luu.Click += new System.EventHandler(this.btn_luu_Click);
             // 
             // Column1
             // 
@@ -438,6 +448,13 @@ namespace DoAnQuanLyXeMay
             this.Column1.HeaderText = "Mã NV";
             this.Column1.Name = "Column1";
             this.Column1.ReadOnly = true;
+            // 
+            // Column13
+            // 
+            this.Column13.DataPropertyName = "CMND";
+            this.Column13.HeaderText = "CMND";
+            this.Column13.Name = "Column13";
+            this.Column13.ReadOnly = true;
             // 
             // Column2
             // 
@@ -459,6 +476,34 @@ namespace DoAnQuanLyXeMay
             this.Column4.HeaderText = "Địa chỉ";
             this.Column4.Name = "Column4";
             this.Column4.ReadOnly = true;
+            // 
+            // Column9
+            // 
+            this.Column9.DataPropertyName = "TAIKHOAN";
+            this.Column9.HeaderText = "Tài khoản";
+            this.Column9.Name = "Column9";
+            this.Column9.ReadOnly = true;
+            // 
+            // Column10
+            // 
+            this.Column10.DataPropertyName = "MATKHAU";
+            this.Column10.HeaderText = "Mật khẩu";
+            this.Column10.Name = "Column10";
+            this.Column10.ReadOnly = true;
+            // 
+            // Column11
+            // 
+            this.Column11.DataPropertyName = "EMAILNV";
+            this.Column11.HeaderText = "Email";
+            this.Column11.Name = "Column11";
+            this.Column11.ReadOnly = true;
+            // 
+            // Column12
+            // 
+            this.Column12.DataPropertyName = "NGAYVL";
+            this.Column12.HeaderText = "Ngày vào làm";
+            this.Column12.Name = "Column12";
+            this.Column12.ReadOnly = true;
             // 
             // Column5
             // 
@@ -488,18 +533,21 @@ namespace DoAnQuanLyXeMay
             this.Column8.Name = "Column8";
             this.Column8.ReadOnly = true;
             // 
-            // btn_luu
+            // txt_gt
             // 
-            this.tableLayoutPanel1.SetColumnSpan(this.btn_luu, 2);
-            this.btn_luu.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btn_luu.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_luu.Location = new System.Drawing.Point(240, 638);
-            this.btn_luu.Name = "btn_luu";
-            this.btn_luu.Size = new System.Drawing.Size(457, 29);
-            this.btn_luu.TabIndex = 23;
-            this.btn_luu.Text = "Lưu";
-            this.btn_luu.UseVisualStyleBackColor = true;
-            this.btn_luu.Click += new System.EventHandler(this.btn_luu_Click);
+            this.txt_gt.FormattingEnabled = true;
+            this.txt_gt.Location = new System.Drawing.Point(135, 128);
+            this.txt_gt.Name = "txt_gt";
+            this.txt_gt.Size = new System.Drawing.Size(181, 21);
+            this.txt_gt.TabIndex = 22;
+            // 
+            // txt_pl
+            // 
+            this.txt_pl.FormattingEnabled = true;
+            this.txt_pl.Location = new System.Drawing.Point(528, 76);
+            this.txt_pl.Name = "txt_pl";
+            this.txt_pl.Size = new System.Drawing.Size(181, 21);
+            this.txt_pl.TabIndex = 23;
             // 
             // thongtinnv
             // 
@@ -529,7 +577,6 @@ namespace DoAnQuanLyXeMay
         private System.Windows.Forms.DateTimePicker txt_ngayvl;
         private System.Windows.Forms.TextBox txt_email;
         private System.Windows.Forms.TextBox txt_cmnd;
-        private System.Windows.Forms.TextBox txt_phanloai;
         private System.Windows.Forms.TextBox txt_sodt;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label10;
@@ -538,7 +585,6 @@ namespace DoAnQuanLyXeMay
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.DateTimePicker txt_ngaysinh;
         private System.Windows.Forms.TextBox txt_diachi;
-        private System.Windows.Forms.TextBox txt_gt;
         private System.Windows.Forms.TextBox txt_hoten;
         private System.Windows.Forms.TextBox txt_manv;
         private System.Windows.Forms.Label label6;
@@ -552,15 +598,22 @@ namespace DoAnQuanLyXeMay
         private System.Windows.Forms.Button btn_tv;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.Button btn_luu;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column13;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column9;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column10;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column11;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column12;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column6;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column7;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column8;
-        private System.Windows.Forms.Button btn_luu;
+        private System.Windows.Forms.ComboBox txt_pl;
+        private System.Windows.Forms.ComboBox txt_gt;
     }
 }
 

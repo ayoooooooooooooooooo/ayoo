@@ -55,6 +55,7 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>QLXeMay.dbml</DependentUpon>
     </Compile>
+    <Compile Include="xuathdn.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />

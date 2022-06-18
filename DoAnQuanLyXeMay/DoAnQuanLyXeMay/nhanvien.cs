@@ -99,9 +99,9 @@ namespace DoAnQuanLyXeMay
 
         private void btn_thongtin_Click(object sender, EventArgs e)
         {
-            //thongtinnvcanhan a = new thongtinnvcanhan(tennv);
-            //a.Show();
-            //a.MdiParent = this.MdiParent;
+            thongtinnvcanhan a = new thongtinnvcanhan(tennv);
+            a.Show();
+            a.MdiParent = this.MdiParent;
         }
         BLLNHhanVien bllnv = new BLLNHhanVien();
         private void btn_doimk_Click(object sender, EventArgs e)
@@ -123,9 +123,9 @@ namespace DoAnQuanLyXeMay
 
         private void btn_themsp_Click_1(object sender, EventArgs e)
         {
-            //tbsp a = new tbsp();
-            //a.Show();
-            //a.MdiParent = this.MdiParent;
+            tbsp a = new tbsp();
+            a.Show();
+            a.MdiParent = this.MdiParent;
         }
     }
 }

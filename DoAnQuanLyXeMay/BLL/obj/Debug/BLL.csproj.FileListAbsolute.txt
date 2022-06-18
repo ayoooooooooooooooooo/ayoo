@@ -50,3 +50,9 @@ D:\HitHub\ayoo\DoAnQuanLyXeMay\BLL\obj\Debug\BLL.csproj.CoreCompileInputs.cache
 D:\HitHub\ayoo\DoAnQuanLyXeMay\BLL\obj\Debug\BLL.csproj.CopyComplete
 D:\HitHub\ayoo\DoAnQuanLyXeMay\BLL\obj\Debug\BLL.dll
 D:\HitHub\ayoo\DoAnQuanLyXeMay\BLL\obj\Debug\BLL.pdb
+D:\HitHub\ayoo\DoAnQuanLyXeMay\BLL\bin\Debug\Syncfusion.Compression.Base.dll
+D:\HitHub\ayoo\DoAnQuanLyXeMay\BLL\bin\Debug\Syncfusion.DocIO.Base.dll
+D:\HitHub\ayoo\DoAnQuanLyXeMay\BLL\bin\Debug\Syncfusion.XlsIO.Base.dll
+D:\HitHub\ayoo\DoAnQuanLyXeMay\BLL\bin\Debug\Syncfusion.Compression.Base.xml
+D:\HitHub\ayoo\DoAnQuanLyXeMay\BLL\bin\Debug\Syncfusion.DocIO.Base.xml
+D:\HitHub\ayoo\DoAnQuanLyXeMay\BLL\bin\Debug\Syncfusion.XlsIO.Base.xml

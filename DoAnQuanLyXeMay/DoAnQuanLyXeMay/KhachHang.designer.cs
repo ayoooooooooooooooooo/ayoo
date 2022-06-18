@@ -54,8 +54,11 @@ namespace DoAnQuanLyXeMay
             this.cl_ns = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.cl_dckh = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ctx_xemct = new System.Windows.Forms.ContextMenuStrip(this.components);
-            this.btn_ls = new System.Windows.Forms.ToolStripMenuItem();
-            this.btn_lsgd = new System.Windows.Forms.ToolStripMenuItem();
+            this.btn_themhdn = new System.Windows.Forms.ToolStripMenuItem();
+            this.btn_xoahdn = new System.Windows.Forms.ToolStripMenuItem();
+            this.btn_suahdn = new System.Windows.Forms.ToolStripMenuItem();
+            this.btn_xcthdn = new System.Windows.Forms.ToolStripMenuItem();
+            this.btn_luu = new ThietkeControl.ButtonDN();
             this.tableLayoutPanel1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dG_kh)).BeginInit();
@@ -75,7 +78,7 @@ namespace DoAnQuanLyXeMay
             this.tableLayoutPanel1.RowCount = 3;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20.35088F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 79.64912F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 380F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 323F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
@@ -100,6 +103,7 @@ namespace DoAnQuanLyXeMay
             // groupBox1
             // 
             this.groupBox1.BackColor = System.Drawing.Color.Yellow;
+            this.groupBox1.Controls.Add(this.btn_luu);
             this.groupBox1.Controls.Add(this.txt_sdtkh);
             this.groupBox1.Controls.Add(this.label7);
             this.groupBox1.Controls.Add(this.dt_nskh);
@@ -115,9 +119,9 @@ namespace DoAnQuanLyXeMay
             this.groupBox1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.groupBox1.Font = new System.Drawing.Font("Segoe Script", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.groupBox1.Location = new System.Drawing.Point(3, 55);
+            this.groupBox1.Location = new System.Drawing.Point(3, 67);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(854, 200);
+            this.groupBox1.Size = new System.Drawing.Size(854, 245);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Thông tin";
@@ -242,7 +246,7 @@ namespace DoAnQuanLyXeMay
             this.label1.ForeColor = System.Drawing.Color.Red;
             this.label1.Location = new System.Drawing.Point(3, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(854, 52);
+            this.label1.Size = new System.Drawing.Size(854, 64);
             this.label1.TabIndex = 1;
             this.label1.Text = "THÔNG TIN KHÁCH HÀNG";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -263,13 +267,14 @@ namespace DoAnQuanLyXeMay
             this.cl_dckh});
             this.dG_kh.ContextMenuStrip = this.ctx_xemct;
             this.dG_kh.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dG_kh.Location = new System.Drawing.Point(3, 261);
+            this.dG_kh.Location = new System.Drawing.Point(3, 318);
             this.dG_kh.Name = "dG_kh";
             this.dG_kh.ReadOnly = true;
             this.dG_kh.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dG_kh.Size = new System.Drawing.Size(854, 375);
+            this.dG_kh.Size = new System.Drawing.Size(854, 318);
             this.dG_kh.TabIndex = 2;
             this.dG_kh.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dG_kh_CellContentClick);
+            this.dG_kh.Click += new System.EventHandler(this.dG_kh_Click);
             // 
             // cl_mkh
             // 
@@ -315,31 +320,65 @@ namespace DoAnQuanLyXeMay
             // 
             // ctx_xemct
             // 
-            this.ctx_xemct.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.ctx_xemct.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.749999F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Italic | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ctx_xemct.Font = new System.Drawing.Font("Showcard Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ctx_xemct.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.btn_ls,
-            this.btn_lsgd});
-            this.ctx_xemct.Name = "ctx_kh";
-            this.ctx_xemct.Size = new System.Drawing.Size(176, 48);
-            this.ctx_xemct.Text = "Chức năng nè";
-            this.ctx_xemct.Opening += new System.ComponentModel.CancelEventHandler(this.contextMenuStrip1_Opening);
+            this.btn_themhdn,
+            this.btn_xoahdn,
+            this.btn_suahdn,
+            this.btn_xcthdn});
+            this.ctx_xemct.Name = "ctx_hdnhap";
+            this.ctx_xemct.Size = new System.Drawing.Size(181, 114);
             // 
-            // btn_ls
+            // btn_themhdn
             // 
-            this.btn_ls.Image = ((System.Drawing.Image)(resources.GetObject("btn_ls.Image")));
-            this.btn_ls.Name = "btn_ls";
-            this.btn_ls.Size = new System.Drawing.Size(175, 22);
-            this.btn_ls.Text = "Xem chi tiết KH";
-            this.btn_ls.Click += new System.EventHandler(this.btn_ls_Click);
+            this.btn_themhdn.Image = ((System.Drawing.Image)(resources.GetObject("btn_themhdn.Image")));
+            this.btn_themhdn.Name = "btn_themhdn";
+            this.btn_themhdn.Size = new System.Drawing.Size(180, 22);
+            this.btn_themhdn.Text = "Thêm";
+            this.btn_themhdn.Click += new System.EventHandler(this.btn_themhdn_Click);
             // 
-            // btn_lsgd
+            // btn_xoahdn
             // 
-            this.btn_lsgd.Image = ((System.Drawing.Image)(resources.GetObject("btn_lsgd.Image")));
-            this.btn_lsgd.Name = "btn_lsgd";
-            this.btn_lsgd.Size = new System.Drawing.Size(175, 22);
-            this.btn_lsgd.Text = "Lịch sử giao dịch";
-            this.btn_lsgd.Click += new System.EventHandler(this.btn_lsgd_Click);
+            this.btn_xoahdn.Image = ((System.Drawing.Image)(resources.GetObject("btn_xoahdn.Image")));
+            this.btn_xoahdn.Name = "btn_xoahdn";
+            this.btn_xoahdn.Size = new System.Drawing.Size(180, 22);
+            this.btn_xoahdn.Text = "Xóa";
+            this.btn_xoahdn.Click += new System.EventHandler(this.btn_xoahdn_Click);
+            // 
+            // btn_suahdn
+            // 
+            this.btn_suahdn.Image = ((System.Drawing.Image)(resources.GetObject("btn_suahdn.Image")));
+            this.btn_suahdn.Name = "btn_suahdn";
+            this.btn_suahdn.Size = new System.Drawing.Size(180, 22);
+            this.btn_suahdn.Text = "Sửa";
+            this.btn_suahdn.Click += new System.EventHandler(this.btn_suahdn_Click);
+            // 
+            // btn_xcthdn
+            // 
+            this.btn_xcthdn.Image = ((System.Drawing.Image)(resources.GetObject("btn_xcthdn.Image")));
+            this.btn_xcthdn.Name = "btn_xcthdn";
+            this.btn_xcthdn.Size = new System.Drawing.Size(152, 22);
+            this.btn_xcthdn.Text = "Xem chi tiết";
+            // 
+            // btn_luu
+            // 
+            this.btn_luu.BackColor = System.Drawing.Color.MediumSlateBlue;
+            this.btn_luu.BackgroundColor = System.Drawing.Color.MediumSlateBlue;
+            this.btn_luu.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.btn_luu.BorderRadius = 20;
+            this.btn_luu.BorderSize = 0;
+            this.btn_luu.FlatAppearance.BorderSize = 0;
+            this.btn_luu.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btn_luu.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_luu.ForeColor = System.Drawing.Color.White;
+            this.btn_luu.Location = new System.Drawing.Point(334, 199);
+            this.btn_luu.Name = "btn_luu";
+            this.btn_luu.Size = new System.Drawing.Size(150, 40);
+            this.btn_luu.TabIndex = 38;
+            this.btn_luu.Text = "LƯU";
+            this.btn_luu.TextColor = System.Drawing.Color.White;
+            this.btn_luu.UseVisualStyleBackColor = false;
+            this.btn_luu.Click += new System.EventHandler(this.btn_luu_Click);
             // 
             // KhachHang
             // 
@@ -377,15 +416,18 @@ namespace DoAnQuanLyXeMay
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.ContextMenuStrip ctx_xemct;
-        private System.Windows.Forms.ToolStripMenuItem btn_ls;
         private System.Windows.Forms.DataGridView dG_kh;
-        private System.Windows.Forms.ToolStripMenuItem btn_lsgd;
         private System.Windows.Forms.DataGridViewTextBoxColumn cl_mkh;
         private System.Windows.Forms.DataGridViewTextBoxColumn cl_htkh;
         private System.Windows.Forms.DataGridViewTextBoxColumn cl_gt;
         private System.Windows.Forms.DataGridViewTextBoxColumn cl_sdt;
         private System.Windows.Forms.DataGridViewTextBoxColumn cl_ns;
         private System.Windows.Forms.DataGridViewTextBoxColumn cl_dckh;
+        private System.Windows.Forms.ContextMenuStrip ctx_xemct;
+        private System.Windows.Forms.ToolStripMenuItem btn_themhdn;
+        private System.Windows.Forms.ToolStripMenuItem btn_xoahdn;
+        private System.Windows.Forms.ToolStripMenuItem btn_suahdn;
+        private System.Windows.Forms.ToolStripMenuItem btn_xcthdn;
+        private ThietkeControl.ButtonDN btn_luu;
     }
 }

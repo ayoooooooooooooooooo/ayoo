@@ -28,79 +28,64 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.buttonDN1 = new ThietkeControl.ButtonDN();
-            this.buttonDN2 = new ThietkeControl.ButtonDN();
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.đăngNhậpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.thoátToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // comboBox1
+            // menuStrip1
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(469, 190);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(121, 21);
-            this.comboBox1.TabIndex = 0;
-            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.đăngNhậpToolStripMenuItem,
+            this.thoátToolStripMenuItem});
+            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.Size = new System.Drawing.Size(1033, 24);
+            this.menuStrip1.TabIndex = 4;
+            this.menuStrip1.Text = "menuStrip1";
             // 
-            // buttonDN1
+            // đăngNhậpToolStripMenuItem
             // 
-            this.buttonDN1.BackColor = System.Drawing.SystemColors.GrayText;
-            this.buttonDN1.BackgroundColor = System.Drawing.SystemColors.GrayText;
-            this.buttonDN1.BorderColor = System.Drawing.Color.PeachPuff;
-            this.buttonDN1.BorderRadius = 18;
-            this.buttonDN1.BorderSize = 0;
-            this.buttonDN1.FlatAppearance.BorderSize = 0;
-            this.buttonDN1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonDN1.ForeColor = System.Drawing.Color.White;
-            this.buttonDN1.Location = new System.Drawing.Point(421, 316);
-            this.buttonDN1.Name = "buttonDN1";
-            this.buttonDN1.Size = new System.Drawing.Size(264, 32);
-            this.buttonDN1.TabIndex = 1;
-            this.buttonDN1.Text = "buttonDN1";
-            this.buttonDN1.TextColor = System.Drawing.Color.White;
-            this.buttonDN1.UseVisualStyleBackColor = false;
-            this.buttonDN1.Click += new System.EventHandler(this.buttonDN1_Click);
+            this.đăngNhậpToolStripMenuItem.Name = "đăngNhậpToolStripMenuItem";
+            this.đăngNhậpToolStripMenuItem.Size = new System.Drawing.Size(77, 20);
+            this.đăngNhậpToolStripMenuItem.Text = "Đăng nhập";
+            this.đăngNhậpToolStripMenuItem.Click += new System.EventHandler(this.đăngNhậpToolStripMenuItem_Click);
             // 
-            // buttonDN2
+            // thoátToolStripMenuItem
             // 
-            this.buttonDN2.BackColor = System.Drawing.SystemColors.GrayText;
-            this.buttonDN2.BackgroundColor = System.Drawing.SystemColors.GrayText;
-            this.buttonDN2.BorderColor = System.Drawing.Color.PeachPuff;
-            this.buttonDN2.BorderRadius = 18;
-            this.buttonDN2.BorderSize = 0;
-            this.buttonDN2.FlatAppearance.BorderSize = 0;
-            this.buttonDN2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonDN2.ForeColor = System.Drawing.Color.White;
-            this.buttonDN2.Location = new System.Drawing.Point(630, 99);
-            this.buttonDN2.Name = "buttonDN2";
-            this.buttonDN2.Size = new System.Drawing.Size(264, 32);
-            this.buttonDN2.TabIndex = 2;
-            this.buttonDN2.Text = "đổi mật khẩu";
-            this.buttonDN2.TextColor = System.Drawing.Color.White;
-            this.buttonDN2.UseVisualStyleBackColor = false;
-            this.buttonDN2.Click += new System.EventHandler(this.buttonDN2_Click);
+            this.thoátToolStripMenuItem.Name = "thoátToolStripMenuItem";
+            this.thoátToolStripMenuItem.Size = new System.Drawing.Size(49, 20);
+            this.thoátToolStripMenuItem.Text = "Thoát";
+            this.thoátToolStripMenuItem.Click += new System.EventHandler(this.thoátToolStripMenuItem_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSize = true;
             this.BackColor = System.Drawing.Color.BlanchedAlmond;
             this.ClientSize = new System.Drawing.Size(1033, 589);
-            this.Controls.Add(this.buttonDN2);
-            this.Controls.Add(this.buttonDN1);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.menuStrip1);
+            this.IsMdiContainer = true;
+            this.MainMenuStrip = this.menuStrip1;
             this.Name = "Form1";
             this.Text = "Form1";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form1_FormClosing);
             this.Load += new System.EventHandler(this.Form1_Load);
+            this.menuStrip1.ResumeLayout(false);
+            this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
 
-        private System.Windows.Forms.ComboBox comboBox1;
-        private ThietkeControl.ButtonDN buttonDN1;
-        private ThietkeControl.ButtonDN buttonDN2;
+        private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem đăngNhậpToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem thoátToolStripMenuItem;
     }
 }
 

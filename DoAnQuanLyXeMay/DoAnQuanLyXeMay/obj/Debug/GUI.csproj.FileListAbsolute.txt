@@ -109,3 +109,11 @@ D:\HitHub\ayoo\DoAnQuanLyXeMay\DoAnQuanLyXeMay\obj\Debug\DoAnQuanLyXeMay.HoaDonX
 D:\HitHub\ayoo\DoAnQuanLyXeMay\DoAnQuanLyXeMay\obj\Debug\DoAnQuanLyXeMay.KhachHang.resources
 C:\cac\Học kì 1 Năm 3\PTPM\ayoo\DoAnQuanLyXeMay\DoAnQuanLyXeMay\obj\Debug\DoAnQuanLyXeMay.chitiethoadonxuat.resources
 C:\cac\Học kì 1 Năm 3\PTPM\ayoo\DoAnQuanLyXeMay\DoAnQuanLyXeMay\obj\Debug\DoAnQuanLyXeMay.KhachHang.resources
+D:\HitHub\ayoo\DoAnQuanLyXeMay\DoAnQuanLyXeMay\obj\Debug\DoAnQuanLyXeMay.tbsp.resources
+D:\HitHub\ayoo\DoAnQuanLyXeMay\DoAnQuanLyXeMay\obj\Debug\DoAnQuanLyXeMay.thongtinnvcanhan.resources
+D:\HitHub\ayoo\DoAnQuanLyXeMay\DoAnQuanLyXeMay\bin\Debug\Syncfusion.Compression.Base.dll
+D:\HitHub\ayoo\DoAnQuanLyXeMay\DoAnQuanLyXeMay\bin\Debug\Syncfusion.DocIO.Base.dll
+D:\HitHub\ayoo\DoAnQuanLyXeMay\DoAnQuanLyXeMay\bin\Debug\Syncfusion.XlsIO.Base.dll
+D:\HitHub\ayoo\DoAnQuanLyXeMay\DoAnQuanLyXeMay\bin\Debug\Syncfusion.Compression.Base.xml
+D:\HitHub\ayoo\DoAnQuanLyXeMay\DoAnQuanLyXeMay\bin\Debug\Syncfusion.DocIO.Base.xml
+D:\HitHub\ayoo\DoAnQuanLyXeMay\DoAnQuanLyXeMay\bin\Debug\Syncfusion.XlsIO.Base.xml
